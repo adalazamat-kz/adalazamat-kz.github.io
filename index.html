@@ -1,0 +1,1745 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Школа Адал азамат — кадровый резерв партии Әділет. Афиша мероприятий и приём заявок. Қазақша және орысша.">
+<meta name="theme-color" content="#4C008E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Школа Адал азамат">
+<meta property="og:title" content="Школа Адал азамат">
+<meta property="og:description" content="Школа Адал азамат — кадровый резерв партии Әділет. Афиша мероприятий и приём заявок. Қазақша және орысша.">
+<meta property="og:locale" content="ru_KZ">
+<meta property="og:locale:alternate" content="kk_KZ">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{color-scheme:light;font:14px/1.5 system-ui,sans-serif;background:#fff}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Адал Азамат</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme: light;
+
+  /* Фирменные цвета. Синий и фиолетовый сняты с логотипа,
+     Medium Purple C и 137 C — из брендбука. */
+  --blue:      #3F8BEE;
+  --violet:    #4C008E;
+  --purple:    #462683;   /* Pantone Medium Purple C */
+  --cyan:      #00B0C9;   /* доп. цвет */
+  --amber:     #FFB547;   /* Pantone 137 C */
+  --lilac:     #C59BD0;
+
+  --ink:       #FFFFFF;   /* основной фон страницы */
+  --ink-2:     #F6F3FC;   /* подложка секций — белый с фиолетовым уклоном */
+  --ink-3:     #EDE7F9;
+  --line:      rgba(70,38,131,.14);
+  --line-2:    rgba(70,38,131,.30);
+
+  --text:      #170B31;   /* почти чёрный с фиолетовым уклоном */
+  --muted:     #6D6088;
+  --amber-ink: #9A5A00;   /* янтарный, читаемый на белом */
+  --shadow:    0 2px 4px -2px rgba(23,11,49,.08), 0 12px 28px -14px rgba(23,11,49,.18);
+
+  --grad:      linear-gradient(135deg, #3F8BEE 0%, #4C008E 100%);
+  --grad-soft: linear-gradient(135deg, rgba(63,139,238,.22) 0%, rgba(76,0,142,.22) 100%);
+
+  --display: "Futura PT", "Futura", "Jost", "Trebuchet MS", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  --pad: clamp(20px, 5vw, 64px);
+  --maxw: 1240px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ink);
+  color:var(--text);
+  font-family:var(--display);
+  font-weight:400;
+  font-size:17px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
+
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+
+/* ─── Типографика ────────────────────────────────────────── */
+.display{
+  font-family:var(--display);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  line-height:.92;
+  text-wrap:balance;
+  margin:0;
+}
+h1.display{font-size:clamp(28px,4.5vw,60px);overflow-wrap:break-word;hyphens:manual}
+h2.display{font-size:clamp(30px,4.4vw,56px)}
+h3.display{font-size:clamp(20px,2.2vw,28px);line-height:1.05}
+.label{
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.lede{font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:#463A5E;max-width:62ch;font-weight:300}
+p{margin:0}
+
+/* ─── Шапка ──────────────────────────────────────────────── */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.bar{
+  display:flex;align-items:center;gap:clamp(12px,3vw,32px);
+  height:68px;
+}
+.brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.brand .lockup{height:42px;width:auto;display:block}
+.brand b{
+  font-family:var(--display);font-weight:700;text-transform:uppercase;
+  letter-spacing:.14em;font-size:14px;white-space:nowrap;
+}
+nav.main{display:flex;gap:26px;margin-left:auto;position:relative}
+.nav-ink{position:absolute;bottom:0;left:0;height:2px;width:0;border-radius:2px;background:var(--grad);transform:translateX(0);transition:transform .38s cubic-bezier(.2,.8,.3,1),width .38s cubic-bezier(.2,.8,.3,1)}
+nav.main button{
+  background:none;border:0;padding:6px 0;cursor:pointer;
+  font-family:var(--display);font-weight:500;text-transform:uppercase;
+  letter-spacing:.1em;font-size:12.5px;color:var(--muted);
+  border-bottom:2px solid transparent;transition:color .2s,border-color .2s;
+}
+nav.main button:hover{color:var(--text)}
+nav.main button[aria-current="page"]{color:var(--violet)}
+
+.lang{display:flex;border:1px solid var(--line-2);border-radius:999px;overflow:hidden;flex:0 0 auto}
+.lang button{
+  background:none;border:0;cursor:pointer;padding:6px 13px;
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;
+  color:var(--muted);transition:.2s;
+}
+.lang button[aria-pressed="true"]{background:var(--grad);color:#fff}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 28px;border:0;border-radius:999px;cursor:pointer;
+  font-family:var(--display);font-weight:700;text-transform:uppercase;
+  letter-spacing:.11em;font-size:13.5px;white-space:nowrap;
+  background:var(--grad);color:#fff;
+  transition:transform .18s cubic-bezier(.2,.8,.3,1), box-shadow .18s;
+  box-shadow:0 6px 24px -8px rgba(63,139,238,.7);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px -10px rgba(63,139,238,.85)}
+.btn:active{transform:translateY(0)}
+.btn.small{padding:11px 20px;font-size:12px}
+.btn.ghost{
+  background:transparent;color:var(--text);
+  border:1px solid var(--line-2);box-shadow:none;
+}
+.btn.ghost:hover{border-color:var(--blue);background:rgba(63,139,238,.08)}
+.bar .btn{flex:0 0 auto}
+.burger{
+  display:none;width:40px;height:40px;padding:0;margin-left:auto;
+  background:none;border:1px solid var(--line-2);border-radius:12px;cursor:pointer;
+  place-items:center;align-content:center;gap:4px;grid-auto-flow:row;flex:0 0 auto;
+}
+.burger span{display:block;width:17px;height:2px;border-radius:2px;background:var(--text);
+  transition:transform .3s cubic-bezier(.2,.8,.3,1),opacity .2s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+@media (max-width:900px){
+  .burger{display:grid}
+  .bar .btn{display:none}
+  .brand .lockup{height:34px}
+  nav.main{
+    position:absolute;top:100%;left:0;right:0;margin:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:#fff;border-bottom:1px solid var(--line);
+    box-shadow:0 18px 34px -22px rgba(23,11,49,.5);
+    padding:6px 0;display:none;
+  }
+  nav.main.open{display:flex;animation:menuIn .26s cubic-bezier(.2,.8,.3,1)}
+  @keyframes menuIn{from{opacity:0;transform:translateY(-8px)}}
+  nav.main button{
+    padding:15px var(--pad);text-align:left;font-size:14px;letter-spacing:.07em;
+    border-bottom:0;color:var(--text);
+  }
+  nav.main button[aria-current="page"]{color:var(--violet);background:var(--ink-2)}
+  .nav-ink{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .burger span{transition:none}
+  nav.main.open{animation:none}
+}
+
+/* ─── Бегущая строка: отсылка к кольцевой люстре кампуса ── */
+.ticker{
+  background:var(--grad);
+  border-block:1px solid rgba(255,255,255,.14);
+  overflow:hidden;padding:9px 0;
+}
+.ticker-row{display:flex;width:max-content;animation:slide 42s linear infinite}
+.ticker-row span{
+  font-family:var(--display);font-weight:700;text-transform:uppercase;
+  letter-spacing:.34em;font-size:12px;color:#fff;
+  padding-inline:20px;white-space:nowrap;
+}
+.ticker:hover .ticker-row{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ─── Афиша ─────────────────────────────────────────────── */
+.poster{
+  position:relative;overflow:hidden;color:#fff;
+  background:var(--grad);
+}
+.poster-glow{
+  position:absolute;inset:-30% -10% auto -20%;height:150%;
+  background:
+    radial-gradient(44% 50% at 14% 18%, rgba(255,255,255,.30), transparent 68%),
+    radial-gradient(50% 56% at 82% 70%, rgba(76,0,142,.55), transparent 72%),
+    radial-gradient(36% 38% at 56% 98%, rgba(0,176,201,.28), transparent 74%);
+  filter:blur(14px);
+  animation:drift 26s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes drift{
+  from{transform:translate3d(-2%,0,0) scale(1)}
+  to{transform:translate3d(4%,-3%,0) scale(1.09)}
+}
+.poster-mark{
+  position:absolute;right:-7%;top:-14%;width:min(58vw,720px);opacity:.10;
+  color:#fff;pointer-events:none;transform:rotate(-8deg);
+}
+.poster .wrap{position:relative;padding-block:clamp(48px,7vw,84px)}
+
+.poster-grid{
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr);
+  gap:clamp(28px,5vw,64px);align-items:end;
+}
+@media (max-width:940px){.poster-grid{grid-template-columns:1fr;align-items:start}}
+
+.status{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--amber-ink);
+  border:1px solid rgba(255,181,71,.7);border-radius:999px;padding:7px 15px;
+}
+.status i{width:7px;height:7px;border-radius:50%;background:var(--amber);animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.28;transform:scale(.7)}}
+
+.poster-title{margin-block:22px 20px}
+.poster-title em{display:block;font-style:normal;color:#fff}
+.poster .lede{color:rgba(255,255,255,.88)}
+.poster .status{color:#fff;border-color:rgba(255,255,255,.5)}
+.poster .status i{background:var(--amber)}
+
+.meta{
+  display:flex;flex-wrap:wrap;gap:0;
+  border-top:1px solid rgba(255,255,255,.3);margin-top:30px;
+}
+.meta div{
+  padding:16px 26px 16px 0;margin-right:26px;
+  border-right:1px solid rgba(255,255,255,.3);
+}
+.meta div:last-child{border-right:0}
+.meta dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:6px}
+.meta dd{margin:0;font-weight:500;font-size:16px}
+
+/* Талон обратного отсчёта */
+.pass{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:26px;
+  box-shadow:var(--shadow);
+  color:var(--text);
+  display:flex;flex-direction:column;gap:20px;
+}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.count b{
+  display:block;font-family:var(--mono);font-variant-numeric:tabular-nums;
+  font-size:clamp(24px,3.4vw,34px);font-weight:600;color:var(--text);line-height:1;
+}
+.count span{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.seats{display:flex;flex-direction:column;gap:9px}
+.seats-head{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.seats-head b{color:var(--text);font-weight:600;font-variant-numeric:tabular-nums}
+.track{height:5px;border-radius:99px;background:rgba(70,38,131,.13);overflow:hidden}
+.track i{display:block;height:100%;border-radius:99px;background:var(--grad);transition:width 1.1s cubic-bezier(.2,.8,.3,1)}
+.pass .btn{width:100%}
+
+/* ─── Секции ────────────────────────────────────────────── */
+section{padding-block:clamp(56px,7vw,92px);scroll-margin-top:80px}
+.sec-head{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:baseline;margin-bottom:38px}
+.sec-head .label{margin-right:auto}
+
+/* Карточки мероприятий */
+.events{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.event{
+  position:relative;display:flex;flex-direction:column;gap:14px;
+  padding:24px;border-radius:18px;
+  background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);
+  transition:border-color .2s, transform .2s, box-shadow .2s;
+}
+.event:hover{border-color:var(--line-2);transform:translateY(-3px);box-shadow:0 6px 12px -6px rgba(23,11,49,.12), 0 22px 44px -18px rgba(76,0,142,.3)}
+.event .date{
+  font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.1em;
+  color:#1F63C4;text-transform:uppercase;
+}
+.event h3{margin:0}
+.event p{color:var(--muted);font-size:15px;font-weight:300;flex:1}
+.event .foot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;border-top:1px solid var(--line)}
+.event .place{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.pill{
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  padding:5px 11px;border-radius:99px;border:1px solid;
+}
+.pill.open{color:var(--amber-ink);border-color:rgba(255,181,71,.75);background:rgba(255,181,71,.12)}
+.pill.soon{color:#00808F;border-color:rgba(0,176,201,.5)}
+.pill.done{color:var(--muted);border-color:var(--line)}
+
+/* ─── Регистрация: посадочный талон ─────────────────────── */
+#reg{background:var(--ink-2);border-block:1px solid var(--line)}
+.ticket{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;
+  border:1px solid var(--line);border-radius:22px;overflow:hidden;
+  background:#fff;box-shadow:var(--shadow);
+}
+@media (max-width:880px){.ticket{grid-template-columns:1fr}}
+.ticket-form{padding:clamp(24px,4vw,40px)}
+.ticket-stub{
+  position:relative;padding:clamp(24px,4vw,36px);
+  background:var(--grad);color:#fff;
+  display:flex;flex-direction:column;gap:18px;justify-content:space-between;
+}
+.ticket-stub::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:0;
+  border-left:2px dashed rgba(255,255,255,.45);
+}
+@media (max-width:880px){
+  .ticket-stub::before{left:0;right:0;bottom:auto;width:auto;height:0;border-left:0;border-top:2px dashed rgba(255,255,255,.45)}
+}
+.ticket-stub svg{width:52px;height:61px}
+.ticket-stub .num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;opacity:.85}
+.ticket-stub h3{font-size:22px}
+
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+@media (max-width:560px){.fields{grid-template-columns:1fr}}
+.field label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select{
+  background:#fff;border:1px solid var(--line-2);border-radius:11px;
+  padding:13px 15px;font-size:16px;font-weight:400;transition:border-color .18s;
+  width:100%;
+}
+.field input::placeholder{color:#9C90B5}
+.field input:focus,.field select:focus{border-color:var(--blue);outline:none}
+.field input[aria-invalid="true"]{border-color:#C62828}
+.err{font-family:var(--mono);font-size:11px;color:#C62828;min-height:0}
+.consent{display:flex;gap:12px;align-items:flex-start;margin-top:22px;font-size:14px;color:#463A5E;font-weight:300;line-height:1.5}
+.consent input{width:19px;height:19px;accent-color:var(--blue);flex:0 0 auto;margin-top:2px}
+.form-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:26px}
+.form-note{font-family:var(--mono);font-size:11px;color:var(--muted)}
+
+.done{
+  display:none;flex-direction:column;gap:16px;align-items:flex-start;
+  padding:clamp(24px,4vw,40px);
+}
+.done.on{display:flex}
+.done .check{
+  width:52px;height:52px;border-radius:50%;background:var(--grad);
+  display:grid;place-items:center;
+}
+.done .code{
+  font-family:var(--mono);font-size:22px;font-weight:600;letter-spacing:.1em;color:var(--violet);
+}
+
+/* ─── О нас ─────────────────────────────────────────────── */
+.about-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:start}
+@media (max-width:880px){.about-hero{grid-template-columns:1fr}}
+.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:44px}
+.principle{background:var(--ink);padding:28px 24px;display:flex;flex-direction:column;gap:11px}
+.principle .kz{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:19px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.principle p{color:#5A4E75;font-size:15px;font-weight:300}
+
+.zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:26px}
+.zone{border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px;background:var(--grad-soft)}
+.zone .n{font-family:var(--mono);font-size:12px;font-weight:600;color:#00808F;letter-spacing:.12em}
+.zone b{font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:17px;font-weight:700}
+.zone span{color:#4E4269;font-size:14.5px;font-weight:300}
+
+/* ─── Подвал ────────────────────────────────────────────── */
+footer{border-top:1px solid var(--line);padding-block:44px;background:var(--ink-2)}
+.foot{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between}
+.foot-links{display:flex;flex-wrap:wrap;gap:22px}
+.foot-links button,.foot-links a{
+  background:none;border:0;padding:0;cursor:pointer;
+  font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted);transition:color .2s;
+}
+.foot-links button:hover,.foot-links a:hover{color:var(--text)}
+
+.empty-note{
+  grid-column:1/-1;padding:34px 20px;text-align:center;border:1px dashed var(--line-2);
+  border-radius:16px;font-family:var(--mono);font-size:13px;color:var(--muted);
+}
+
+/* ─── Карточка «Кто может участвовать» ──────────────────── */
+.join{
+  position:relative;overflow:hidden;border-radius:22px;padding:30px 28px;
+  background:var(--grad);color:#fff;
+  display:flex;flex-direction:column;gap:14px;
+  box-shadow:0 20px 48px -22px rgba(76,0,142,.75);
+  transition:transform .3s cubic-bezier(.2,.8,.3,1),box-shadow .3s;
+}
+.join:hover{transform:translateY(-3px);box-shadow:0 26px 56px -22px rgba(63,139,238,.8)}
+.join::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 60% at 18% 8%, rgba(255,255,255,.28), transparent 70%);
+}
+.join-mark{
+  position:absolute;right:-38px;bottom:-46px;width:210px;color:#fff;opacity:.13;
+  pointer-events:none;
+}
+.join>*{position:relative;z-index:1}
+.join .label{color:rgba(255,255,255,.72)}
+.join-text{font-weight:300;font-size:15.5px;line-height:1.6;color:rgba(255,255,255,.94)}
+.btn-light{
+  background:#fff;color:var(--violet);box-shadow:0 8px 22px -10px rgba(10,5,32,.6);
+  align-self:flex-start;text-decoration:none;
+}
+.btn-light:hover{box-shadow:0 14px 30px -12px rgba(10,5,32,.7)}
+.join-hint{
+  min-height:16px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  color:rgba(255,255,255,.8);
+}
+/* внутри тёмной секции карточка остаётся градиентной */
+.sec-dark .join .label{color:rgba(255,255,255,.72)}
+
+/* Крупная кнопка под афишей */
+.hero-cta{margin-top:28px;padding:17px 34px;font-size:14px}
+
+/* Окно регистрации пошире */
+.modal-reg{width:min(620px,100%)}
+.modal-reg .modal-body{padding-top:22px}
+.modal-reg .done{padding:0}
+.modal-reg .ticket-form{padding:0}
+
+/* ─── Фотография в афише ────────────────────────────────── */
+.poster-photo{position:absolute;inset:0;z-index:0;overflow:hidden}
+.poster-photo img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  animation:slowZoom 26s ease-in-out infinite alternate;
+}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+.poster-photo::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(100deg, rgba(76,0,142,.94) 0%, rgba(63,139,238,.72) 42%, rgba(76,0,142,.46) 72%, rgba(10,5,32,.62) 100%),
+    linear-gradient(to bottom, rgba(10,5,32,.28), transparent 42%);
+}
+.poster-glow,.poster-mark{z-index:1}
+.poster .wrap{z-index:2}
+
+/* ─── Фотографии с открытия ─────────────────────────────── */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+@media (max-width:720px){.gallery{grid-template-columns:repeat(2,1fr);gap:10px}}
+.shot{
+  position:relative;overflow:hidden;border-radius:16px;aspect-ratio:4/3;
+  border:1px solid rgba(255,255,255,.18);background:#150B31;
+}
+.shot img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .55s cubic-bezier(.2,.8,.3,1),filter .4s;
+}
+.shot:hover img{transform:scale(1.06)}
+.shot::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to top, rgba(10,5,32,.5), transparent 55%);
+  opacity:.85;transition:opacity .4s;
+}
+.shot:hover::after{opacity:.35}
+
+@media (prefers-reduced-motion:reduce){
+  .poster-photo img{animation:none}
+  .shot img{transition:none}
+}
+
+/* ─── Цветовой ритм: белое / чёрное / градиент ──────────── */
+.sec-dark,.sec-grad{position:relative;overflow:hidden;color:#fff}
+.sec-dark{background:#0A0520}
+.sec-grad{background:var(--grad)}
+.sec-dark>.wrap,.sec-grad>.wrap{position:relative;z-index:1}
+
+/* Живое свечение внутри цветных блоков */
+.sec-dark::before,.sec-grad::before{
+  content:"";position:absolute;inset:-25% -10%;pointer-events:none;
+  animation:drift 30s ease-in-out infinite alternate;
+}
+.sec-dark::before{
+  background:
+    radial-gradient(42% 48% at 12% 16%, rgba(63,139,238,.30), transparent 68%),
+    radial-gradient(46% 52% at 86% 78%, rgba(76,0,142,.55), transparent 70%),
+    radial-gradient(34% 36% at 58% 104%, rgba(0,176,201,.16), transparent 72%);
+}
+.sec-grad::before{
+  background:
+    radial-gradient(40% 46% at 16% 20%, rgba(255,255,255,.24), transparent 68%),
+    radial-gradient(44% 50% at 84% 76%, rgba(76,0,142,.5), transparent 72%);
+}
+
+/* Текст внутри цветных блоков */
+.sec-dark .label,.sec-grad .label{color:rgba(255,255,255,.62)}
+.sec-dark .lede,.sec-grad .lede{color:rgba(255,255,255,.85)}
+.sec-dark .display,.sec-grad .display{color:#fff}
+.sec-dark .empty-note,.sec-grad .empty-note{border-color:rgba(255,255,255,.35);color:rgba(255,255,255,.75)}
+
+/* Факты на тёмном */
+.sec-dark .facts{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.18)}
+.sec-dark .fact{background:#0A0520}
+.sec-dark .fact:hover{background:#150B31}
+.sec-dark .fact .k{color:rgba(255,255,255,.6)}
+.sec-dark .fact .v{background:linear-gradient(100deg,#8FC0FF,#C59BD0);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Контакты на тёмном */
+.sec-dark .contact{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);box-shadow:none}
+.sec-dark .contact .k{color:rgba(255,255,255,.6)}
+.sec-dark .contact .v{color:#fff}
+.sec-dark a.contact:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.4)}
+.sec-dark .fill{color:#FFC978;background:rgba(255,181,71,.18)}
+
+/* Белая карточка внутри тёмного блока остаётся белой */
+.sec-dark .pass{background:#fff;color:var(--text);border-color:transparent}
+.sec-dark .pass .label{color:var(--muted)}
+
+/* Строки-связки между секциями */
+.ticker-sm{padding:8px 0}
+.ticker-sm .ticker-row span{font-size:11px;letter-spacing:.3em}
+.ticker.rev .ticker-row{animation-direction:reverse}
+
+/* Подвал в тон тёмным блокам */
+footer{background:#0A0520;border-top-color:rgba(255,255,255,.14)}
+footer .foot-links button{color:rgba(255,255,255,.6)}
+footer .foot-links button:hover{color:#fff}
+
+@media (prefers-reduced-motion:reduce){
+  .sec-dark::before,.sec-grad::before{animation:none}
+}
+
+/* ─── Факты о программе ─────────────────────────────────── */
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:48px}
+@media (min-width:760px){.facts{grid-template-columns:repeat(4,1fr)}}
+.fact{background:#fff;padding:26px 24px;display:flex;flex-direction:column;gap:9px;transition:background .3s}
+.fact:hover{background:var(--ink-2)}
+.fact .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.fact .v{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.15;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ─── Вопросы и ответы ──────────────────────────────────── */
+.faq{margin-top:32px;border-top:1px solid var(--line)}
+.qa{border-bottom:1px solid var(--line)}
+.qa>button{
+  width:100%;display:flex;gap:20px;align-items:flex-start;justify-content:space-between;
+  background:none;border:0;cursor:pointer;text-align:left;padding:22px 4px;
+  font-family:var(--display);font-weight:500;font-size:clamp(16px,1.7vw,19px);line-height:1.35;
+  color:var(--text);transition:color .2s;
+}
+.qa>button:hover{color:var(--violet)}
+.qa .chev{flex:0 0 auto;width:26px;height:26px;display:grid;place-items:center;margin-top:1px;
+  border-radius:50%;border:1px solid var(--line-2);color:var(--violet);
+  transition:transform .35s cubic-bezier(.2,.8,.3,1),background .25s,border-color .25s}
+.qa[data-open] .chev{transform:rotate(45deg);background:var(--grad);border-color:transparent;color:#fff}
+.qa .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .38s cubic-bezier(.2,.8,.3,1)}
+.qa[data-open] .body{grid-template-rows:1fr}
+.qa .body>div{overflow:hidden}
+.qa .body p{font-weight:300;font-size:16px;line-height:1.6;color:#463A5E;max-width:70ch;padding:0 4px 24px}
+
+/* ─── Контакты ──────────────────────────────────────────── */
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:32px}
+.contact{
+  display:flex;flex-direction:column;gap:7px;padding:22px;border-radius:16px;
+  border:1px solid var(--line);background:#fff;box-shadow:var(--shadow);
+  transition:transform .25s cubic-bezier(.2,.8,.3,1),border-color .25s;
+}
+a.contact:hover{transform:translateY(-3px);border-color:var(--line-2)}
+.contact .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.contact .v{font-size:16px;font-weight:500;line-height:1.4;color:var(--text);word-break:break-word}
+
+@media (prefers-reduced-motion:reduce){
+  .qa .body,.qa .chev,.contact{transition:none}
+}
+
+/* ─── Согласие на обработку ПД: модальное окно ──────────── */
+.modal{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:clamp(12px,4vw,40px)}
+.modal-back{position:absolute;inset:0;background:rgba(23,11,49,.5);backdrop-filter:blur(3px);animation:fadeIn .2s ease}
+.modal-card{
+  position:relative;width:min(760px,100%);max-height:86vh;display:flex;flex-direction:column;
+  background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;
+  box-shadow:0 24px 70px -20px rgba(23,11,49,.4);
+  animation:popIn .28s cubic-bezier(.2,.8,.3,1);
+}
+@keyframes fadeIn{from{opacity:0}}
+@keyframes popIn{from{opacity:0;transform:translateY(14px) scale(.985)}}
+.modal-head{
+  display:flex;gap:18px;align-items:flex-start;justify-content:space-between;
+  padding:26px clamp(20px,3vw,32px) 20px;border-bottom:1px solid var(--line);
+}
+.modal-head h3{font-size:clamp(19px,2.4vw,26px);margin-bottom:8px}
+.modal-x{
+  flex:0 0 auto;width:38px;height:38px;display:grid;place-items:center;cursor:pointer;
+  background:var(--ink-2);border:1px solid var(--line);border-radius:50%;color:var(--muted);transition:.2s;
+}
+.modal-x:hover{color:var(--text);border-color:var(--line-2)}
+.modal-body{padding:8px clamp(20px,3vw,32px) 32px;overflow-y:auto}
+
+.modal-body .sub{color:var(--muted);font-weight:300;font-size:15.5px;max-width:64ch;margin-block:20px 8px}
+.part{margin-top:28px}
+.part-h{display:flex;gap:13px;align-items:baseline;margin-bottom:12px}
+.part-h span{
+  font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--blue);
+  font-variant-numeric:tabular-nums;flex:0 0 auto;
+}
+.part-h b{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:15px}
+.clauses{display:flex;flex-direction:column;gap:10px;padding-left:26px}
+.clause{display:flex;gap:13px;align-items:baseline}
+.clause>i{
+  font-family:var(--mono);font-style:normal;font-size:11.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums;flex:0 0 40px;
+}
+.clause>p{font-weight:300;font-size:15px;line-height:1.6;color:#463A5E;max-width:70ch}
+@media (max-width:560px){
+  .clauses{padding-left:0}
+  .clause{flex-direction:column;gap:2px}
+  .clause>i{flex:none}
+}
+.fill{
+  color:var(--amber-ink);background:rgba(255,181,71,.16);border-radius:4px;
+  font-family:var(--mono);font-size:.86em;padding:1px 5px;
+}
+.doc-note{
+  display:flex;gap:13px;align-items:flex-start;margin-top:30px;padding:17px 19px;
+  border:1px solid rgba(255,181,71,.5);border-radius:14px;background:rgba(255,181,71,.10);
+  color:var(--amber-ink);
+}
+.doc-note p{font-size:14.5px;font-weight:300;color:#5C4A2E;line-height:1.55}
+.doc-note b{color:var(--amber-ink);font-weight:600}
+.consent a,.form-note a{color:#1F63C4;text-decoration:underline;text-underline-offset:3px}
+.consent a:hover,.form-note a:hover{color:var(--violet)}
+
+/* ─── Оркестрованное появление афиши при загрузке ────────── */
+@keyframes riseIn{from{opacity:0;transform:translateY(24px)}}
+@keyframes riseInSoft{from{opacity:0;transform:translateY(14px)}}
+body.motion .poster .status{animation:riseInSoft .6s cubic-bezier(.2,.8,.3,1) both .05s}
+body.motion .poster-title{animation:riseIn .8s cubic-bezier(.2,.8,.3,1) both .14s}
+body.motion .poster .lede{animation:riseInSoft .7s cubic-bezier(.2,.8,.3,1) both .3s}
+body.motion .poster .meta{animation:riseInSoft .7s cubic-bezier(.2,.8,.3,1) both .4s}
+body.motion .poster .pass{animation:riseIn .85s cubic-bezier(.2,.8,.3,1) both .34s}
+body.motion .ticker{animation:riseInSoft .6s ease both}
+
+/* Плавное перепроявление при смене языка */
+main,.poster{transition:opacity .18s ease}
+body.swapping main,body.swapping .poster{opacity:0}
+
+/* Кнопка в состоянии отправки */
+.btn[data-busy]{pointer-events:none;opacity:.75}
+.btn .spin{
+  width:15px;height:15px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.35);border-top-color:#fff;
+  animation:spin .7s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Появление талона участника */
+@keyframes stubIn{from{opacity:0;transform:translateY(18px) scale(.98)}}
+.done.on{animation:stubIn .5s cubic-bezier(.2,.8,.3,1) both}
+.done .check{animation:popCheck .5s cubic-bezier(.2,1.3,.4,1) both .12s}
+@keyframes popCheck{from{opacity:0;transform:scale(.4) rotate(-25deg)}}
+.done .code{min-height:1.2em}
+
+/* Слайд цифр обратного отсчёта */
+.count b{will-change:transform}
+
+@media (prefers-reduced-motion:reduce){
+  body.motion .poster .status,body.motion .poster-title,body.motion .poster .lede,
+  body.motion .poster .meta,body.motion .poster .pass,body.motion .ticker,
+  .done.on,.done .check{animation:none}
+  main,.poster{transition:none}
+  .track i{transition:none}
+}
+
+/* ─── Появление при прокрутке ───────────────────────────── */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.22,.7,.24,1),transform .75s cubic-bezier(.22,.7,.24,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* Индикатор прокрутки */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:100;pointer-events:none}
+
+/* Живые плашки мероприятий */
+.event{overflow:hidden}
+.event>*{position:relative;z-index:1}
+.event::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%), rgba(63,139,238,.16), rgba(76,0,142,.06) 45%, transparent 70%);
+  opacity:0;transition:opacity .4s;
+}
+.event:hover::before{opacity:1}
+.event::after{
+  content:"";position:absolute;left:0;right:0;top:0;height:2px;z-index:2;
+  background:var(--grad);transform:scaleX(0);transform-origin:left;
+  transition:transform .8s cubic-bezier(.22,.7,.24,1) .12s;
+}
+.event.in::after,.event:not(.reveal)::after{transform:scaleX(1)}
+
+/* Плашки кампуса — медленно переливающийся градиент */
+.zone{
+  background:linear-gradient(135deg,rgba(63,139,238,.13),rgba(76,0,142,.15),rgba(0,176,201,.10),rgba(63,139,238,.13));
+  background-size:300% 300%;
+  animation:zoneShift 18s ease-in-out infinite;
+  transition:transform .3s cubic-bezier(.2,.8,.3,1),border-color .3s;
+}
+.zone:nth-child(2){animation-delay:-4.5s}
+.zone:nth-child(3){animation-delay:-9s}
+.zone:nth-child(4){animation-delay:-13.5s}
+.zone:hover{transform:translateY(-4px);border-color:var(--line-2)}
+@keyframes zoneShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* Принципы — подчёркивание вырастает при появлении */
+.principle{position:relative;transition:background .3s}
+.principle:hover{background:var(--ink-2)}
+.principle::after{
+  content:"";position:absolute;left:24px;bottom:0;height:2px;width:44px;
+  background:var(--grad);transform:scaleX(0);transform-origin:left;
+  transition:transform .7s cubic-bezier(.22,.7,.24,1) .2s,width .3s;
+}
+.principle.in::after,.principle:not(.reveal)::after{transform:scaleX(1)}
+.principle:hover::after{width:72px}
+
+/* Талон — мягкое свечение по краю */
+.pass{transition:border-color .4s,box-shadow .4s}
+.pass:hover{border-color:rgba(63,139,238,.45);box-shadow:0 6px 14px -8px rgba(23,11,49,.14), 0 24px 48px -20px rgba(63,139,238,.55)}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none}
+  .zone{animation:none}
+}
+
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="aa-lockup" viewBox="0 0 1512 704"><path d="M505.666 0H74.0892C33.2357 0 0 33.1156 0 73.8265V396.336C0 458.725 48.0882 526.294 142.927 597.167C211.03 648.056 278.052 681.642 280.87 683.048C283.708 684.459 286.793 685.165 289.883 685.165C292.968 685.165 296.053 684.459 298.891 683.048C301.708 681.642 368.73 648.061 436.834 597.167C531.672 526.294 579.755 458.725 579.755 396.336V73.8265C579.755 33.1156 546.519 0 505.666 0Z" fill="white"/>
+<path d="M819.647 156.631L807.97 127.206H749.121L737.211 156.631H699.846L762.666 0.866529H795.593L857.012 156.631H819.647ZM759.63 99.6495H798.162L779.013 47.3389L759.63 99.6495Z" fill="white"/>
+<path d="M886.726 52.4765H978.97V130.942H994.383V186.055H964.492V156.631H893.265V186.055H863.373V130.942C868.822 130.32 873.571 128.14 877.619 124.404C881.511 120.823 884.002 116.541 885.092 111.559C886.181 106.577 886.726 100.35 886.726 92.8771V52.4765ZM945.342 130.942V78.1647H917.552V98.0147C917.552 105.643 916.774 112.027 915.217 117.164C913.66 122.146 910.546 126.739 905.876 130.942H945.342Z" fill="white"/>
+<path d="M1089.25 64.153V52.4765H1122.88V156.631H1089.25V144.02C1082.25 154.762 1071.97 160.134 1058.43 160.134C1042.39 160.134 1029.39 154.84 1019.43 144.254C1009.31 133.511 1004.25 120.511 1004.25 105.254C1004.25 87.973 1009.62 73.9612 1020.36 63.2189C1029.86 53.722 1041.92 48.9736 1056.56 48.9736C1070.88 48.9736 1081.78 54.0334 1089.25 64.153ZM1064.97 77.9312C1057.65 77.9312 1051.5 80.4222 1046.52 85.4042C1041.38 90.5418 1038.81 96.8471 1038.81 104.32C1038.81 111.793 1041.15 118.02 1045.82 123.002C1050.95 128.451 1057.57 131.176 1065.67 131.176C1072.52 131.176 1078.35 128.763 1083.18 123.937C1088.63 118.799 1091.35 112.26 1091.35 104.32C1091.35 96.38 1088.79 89.9969 1083.65 85.1706C1078.67 80.3444 1072.44 77.9312 1064.97 77.9312Z" fill="white"/>
+<path d="M1250.77 52.4765V156.631H1217.15V79.5659H1189.82V111.559C1189.82 127.439 1186.4 139.272 1179.55 147.056C1172.85 154.373 1163.28 158.032 1150.82 158.032C1146.31 158.032 1141.95 157.487 1137.75 156.397V129.775C1144.91 131.799 1150.28 130.787 1153.86 126.739C1156.66 123.002 1158.06 117.476 1158.06 110.158V52.4765H1250.77Z" fill="white"/>
+<path d="M782.635 259.321V247.645H816.263V351.799H782.635V339.188C775.629 349.931 765.354 355.302 751.809 355.302C735.773 355.302 722.773 350.008 712.809 339.422C702.69 328.679 697.63 315.68 697.63 300.422C697.63 283.141 703.001 269.129 713.744 258.387C723.24 248.89 735.306 244.142 749.941 244.142C764.264 244.142 775.162 249.202 782.635 259.321ZM758.348 273.099C751.03 273.099 744.881 275.59 739.899 280.572C734.761 285.71 732.192 292.015 732.192 299.488C732.192 306.961 734.528 313.189 739.198 318.171C744.336 323.62 750.953 326.344 759.048 326.344C765.898 326.344 771.737 323.931 776.563 319.105C782.012 313.967 784.736 307.428 784.736 299.488C784.736 291.548 782.168 285.165 777.03 280.339C772.048 275.513 765.821 273.099 758.348 273.099Z" fill="white"/>
+<path d="M851.679 278.938L838.835 256.519C844.44 252.938 850.2 250.058 856.116 247.878C863.122 245.387 871.296 244.142 880.637 244.142C896.828 244.142 908.582 247.723 915.9 254.884C921.037 259.866 923.606 266.249 923.606 274.034C923.606 281.507 921.504 287.423 917.301 291.782C914.498 294.584 911.54 296.53 908.427 297.62C914.187 299.021 918.858 301.512 922.439 305.093C927.109 309.608 929.444 315.368 929.444 322.374C929.444 330.781 926.409 338.021 920.337 344.092C912.708 351.565 899.942 355.302 882.038 355.302C871.296 355.302 861.799 353.745 853.547 350.631C846.697 347.985 840.47 344.326 834.865 339.655L849.11 317.47C853.314 321.051 857.595 323.853 861.954 325.877C867.092 328.057 872.463 329.146 878.068 329.146C883.206 329.146 887.253 328.29 890.211 326.578C893.325 324.709 894.882 322.063 894.882 318.638C894.882 315.524 893.247 313.189 889.978 311.632C887.02 310.386 882.972 309.764 877.834 309.764H865.224V286.878H874.799C880.248 286.878 884.451 286.255 887.409 285.009C890.679 283.453 892.313 281.117 892.313 278.004C892.313 275.046 890.601 272.788 887.176 271.231C884.218 269.986 880.715 269.363 876.667 269.363C871.84 269.363 867.248 270.297 862.889 272.165C858.529 274.034 854.793 276.291 851.679 278.938Z" fill="white"/>
+<path d="M1030.3 259.321V247.645H1063.93V351.799H1030.3V339.188C1023.3 349.931 1013.02 355.302 999.478 355.302C983.442 355.302 970.442 350.008 960.478 339.422C950.359 328.679 945.299 315.68 945.299 300.422C945.299 283.141 950.67 269.129 961.412 258.387C970.909 248.89 982.975 244.142 997.609 244.142C1011.93 244.142 1022.83 249.202 1030.3 259.321ZM1006.02 273.099C998.699 273.099 992.55 275.59 987.568 280.572C982.43 285.71 979.861 292.015 979.861 299.488C979.861 306.961 982.196 313.189 986.867 318.171C992.005 323.62 998.621 326.344 1006.72 326.344C1013.57 326.344 1019.41 323.931 1024.23 319.105C1029.68 313.967 1032.41 307.428 1032.41 299.488C1032.41 291.548 1029.84 285.165 1024.7 280.339C1019.72 275.513 1013.49 273.099 1006.02 273.099Z" fill="white"/>
+<path d="M1082.53 351.799L1100.75 247.645H1127.37L1154.46 305.56L1181.55 247.645H1208.17L1226.39 351.799H1194.16L1185.75 296.452L1160.07 351.799H1148.86L1123.17 296.452L1114.76 351.799H1082.53Z" fill="white"/>
+<path d="M1324.95 259.321V247.645H1358.58V351.799H1324.95V339.188C1317.95 349.931 1307.67 355.302 1294.13 355.302C1278.09 355.302 1265.09 350.008 1255.13 339.422C1245.01 328.679 1239.95 315.68 1239.95 300.422C1239.95 283.141 1245.32 269.129 1256.06 258.387C1265.56 248.89 1277.62 244.142 1292.26 244.142C1306.58 244.142 1317.48 249.202 1324.95 259.321ZM1300.66 273.099C1293.35 273.099 1287.2 275.59 1282.22 280.572C1277.08 285.71 1274.51 292.015 1274.51 299.488C1274.51 306.961 1276.84 313.189 1281.52 318.171C1286.65 323.62 1293.27 326.344 1301.37 326.344C1308.22 326.344 1314.05 323.931 1318.88 319.105C1324.33 313.967 1327.05 307.428 1327.05 299.488C1327.05 291.548 1324.48 285.165 1319.35 280.339C1314.37 275.513 1308.14 273.099 1300.66 273.099Z" fill="white"/>
+<path d="M1463.12 274.734H1435.1V351.799H1401.47V274.734H1373.45V247.645H1463.12V274.734Z" fill="white"/>
+<path d="M695.295 546.967L713.51 442.813H740.132L767.222 500.728L794.311 442.813H820.934L839.149 546.967H806.922L798.515 491.621L772.826 546.967H761.617L735.929 491.621L727.522 546.967H695.295Z" fill="white"/>
+<path d="M887.971 480.645H933.509C932.264 475.663 930.006 471.615 926.737 468.501C922.533 464.609 917.24 462.663 910.857 462.663C904.007 462.663 898.324 464.92 893.809 469.435C890.696 472.705 888.749 476.441 887.971 480.645ZM964.569 497.225V500.728H886.803C886.803 507.89 888.905 513.806 893.109 518.477C897.157 522.836 902.917 525.015 910.39 525.015C915.995 525.015 920.509 524.003 923.935 521.979C926.581 520.578 928.994 517.698 931.174 513.339L962.934 516.608C959.353 527.973 952.659 536.692 942.85 542.764C934.288 547.901 923.312 550.47 909.923 550.47C892.175 550.47 878.318 545.488 868.355 535.524C857.924 525.093 852.708 511.704 852.708 495.357C852.708 478.854 858.001 465.154 868.588 454.256C878.552 444.292 891.863 439.31 908.522 439.31C926.114 439.31 939.892 444.526 949.856 454.957C959.665 465.387 964.569 479.477 964.569 497.225Z" fill="white"/>
+<path d="M985.557 546.967V442.813H1019.19V484.148L1053.28 442.813H1095.08L1050.48 491.154L1098.12 546.967H1054.68L1019.19 500.728V546.967H985.557Z" fill="white"/>
+<path d="M1190.14 469.902H1162.11V546.967H1128.49V469.902H1100.46V442.813H1190.14V469.902Z" fill="white"/>
+<path d="M1235.3 480.645H1280.84C1279.59 475.663 1277.34 471.615 1274.07 468.501C1269.86 464.609 1264.57 462.663 1258.19 462.663C1251.34 462.663 1245.65 464.92 1241.14 469.435C1238.02 472.705 1236.08 476.441 1235.3 480.645ZM1311.9 497.225V500.728H1234.13C1234.13 507.89 1236.23 513.806 1240.44 518.477C1244.49 522.836 1250.25 525.015 1257.72 525.015C1263.32 525.015 1267.84 524.003 1271.26 521.979C1273.91 520.578 1276.32 517.698 1278.5 513.339L1310.26 516.608C1306.68 527.973 1299.99 536.692 1290.18 542.764C1281.62 547.901 1270.64 550.47 1257.25 550.47C1239.5 550.47 1225.65 545.488 1215.68 535.524C1205.25 525.093 1200.04 511.704 1200.04 495.357C1200.04 478.854 1205.33 465.154 1215.92 454.256C1225.88 444.292 1239.19 439.31 1255.85 439.31C1273.44 439.31 1287.22 444.526 1297.19 454.957C1306.99 465.387 1311.9 479.477 1311.9 497.225Z" fill="white"/>
+<path d="M1418.36 376.491H1447.78C1446.69 387.856 1442.57 396.963 1435.41 403.814C1430.27 408.951 1421.86 413.155 1410.18 416.424L1398.51 419.694C1384.19 423.741 1374.77 427.789 1370.25 431.837C1364.02 437.597 1360.44 444.915 1359.51 453.789H1360.68C1369.39 444.292 1381.3 439.544 1396.41 439.544C1413.22 439.544 1426.69 444.448 1436.81 454.256C1447.08 464.22 1452.22 476.986 1452.22 492.555C1452.22 509.525 1446.62 523.458 1435.41 534.357C1424.51 545.099 1409.72 550.47 1391.04 550.47C1373.13 550.47 1358.81 545.332 1348.07 535.057C1335.77 522.914 1329.62 505.01 1329.62 481.345C1329.62 449.118 1336.47 425.688 1350.17 411.053C1358.26 402.49 1370.72 396.341 1387.53 392.604L1393.84 391.203C1405.98 388.556 1413.3 385.832 1415.79 383.029C1417.5 381.161 1418.36 378.982 1418.36 376.491ZM1390.8 468.034C1383.33 468.034 1377.1 470.525 1372.12 475.507C1366.83 480.8 1364.18 487.339 1364.18 495.124C1364.18 502.596 1366.75 508.902 1371.89 514.039C1376.87 519.021 1383.33 521.512 1391.27 521.512C1397.96 521.512 1403.8 519.255 1408.78 514.74C1414.7 509.291 1417.66 502.441 1417.66 494.189C1417.66 487.339 1415.09 481.19 1409.95 475.741C1404.81 470.603 1398.43 468.034 1390.8 468.034Z" fill="white"/>
+<path d="M1475.48 442.813H1509.1V546.967H1475.48V442.813ZM1478.28 412.454C1474.54 408.562 1472.67 403.891 1472.67 398.442C1472.67 392.993 1474.54 388.401 1478.28 384.664C1482.17 380.772 1486.84 378.826 1492.29 378.826C1497.74 378.826 1502.33 380.772 1506.07 384.664C1509.96 388.401 1511.91 392.993 1511.91 398.442C1511.91 403.891 1509.96 408.562 1506.07 412.454C1502.33 416.191 1497.74 418.059 1492.29 418.059C1486.84 418.059 1482.17 416.191 1478.28 412.454Z" fill="white"/>
+<path d="M735.807 629.404V637.377H713.716V651.413H735.143V659.385H713.716V676.826H735.807V684.799H705.245V629.404H735.807Z" fill="white"/>
+<path d="M774.01 649.835V684.799H765.871V657.309H755.573V671.179C755.573 675.497 754.466 678.847 752.251 681.228C749.427 684.384 745.607 685.574 740.79 684.799V677.324C743.171 677.878 745.081 677.352 746.521 675.746C747.351 674.75 747.766 673.227 747.766 671.179V649.835H774.01Z" fill="white"/>
+<path d="M787.276 649.835H813.52V677.324H818.835V694.765H811.36V684.799H786.943V694.765H779.469V677.324C782.293 677.158 784.424 675.636 785.864 672.757C786.805 670.708 787.276 667.635 787.276 663.538V649.835ZM805.381 677.324V657.309H795.082V666.611C795.082 671.649 793.726 675.22 791.013 677.324H805.381Z" fill="white"/>
+<path d="M824.676 649.835H832.814V684.799H824.676V649.835ZM825.008 639.121C824.011 638.125 823.513 636.879 823.513 635.384C823.513 633.889 824.011 632.643 825.008 631.647C826.004 630.65 827.25 630.152 828.745 630.152C830.24 630.152 831.486 630.65 832.482 631.647C833.479 632.643 833.977 633.889 833.977 635.384C833.977 636.879 833.479 638.125 832.482 639.121C831.486 640.118 830.24 640.616 828.745 640.616C827.25 640.616 826.004 640.118 825.008 639.121Z" fill="white"/>
+<path d="M843.086 684.799V649.835H851.225V662.791H865.676V649.835H873.815V677.324H879.628V694.765H872.154V684.799H865.676V670.265H851.225V684.799H843.086Z" fill="white"/>
+<path d="M904.806 649.835H912.945V662.292L924.572 649.835H935.369L920.087 665.116L936.199 684.799H925.901L914.274 670.431L912.945 671.76V684.799H904.806V649.835Z" fill="white"/>
+<path d="M967.126 653.904V649.835H975.265V684.799H967.126V681.145C964.413 684.301 960.925 685.879 956.661 685.879C951.512 685.879 947.387 684.051 944.287 680.397C941.242 676.743 939.719 672.369 939.719 667.275C939.719 661.739 941.352 657.309 944.619 653.987C947.941 650.61 951.983 648.921 956.744 648.921C961.118 648.921 964.579 650.582 967.126 653.904ZM957.741 656.23C954.862 656.23 952.509 657.309 950.682 659.469C948.91 661.628 948.024 664.286 948.024 667.441C948.024 670.542 948.91 673.172 950.682 675.331C952.509 677.49 954.862 678.57 957.741 678.57C960.509 678.57 962.835 677.601 964.717 675.663C966.655 673.726 967.624 671.013 967.624 667.524C967.624 663.926 966.655 661.157 964.717 659.219C962.835 657.226 960.509 656.23 957.741 656.23Z" fill="white"/>
+<path d="M988.575 649.835H1014.82V677.324H1020.13V694.765H1012.66V684.799H988.243V694.765H980.769V677.324C983.592 677.158 985.724 675.636 987.163 672.757C988.105 670.708 988.575 667.635 988.575 663.538V649.835ZM1006.68 677.324V657.309H996.382V666.611C996.382 671.649 995.026 675.22 992.313 677.324H1006.68Z" fill="white"/>
+<path d="M1034.11 680.729V703.817H1025.98V649.835H1034.11V653.655C1036.77 650.499 1040.23 648.921 1044.5 648.921C1049.26 648.921 1053.27 650.61 1056.54 653.987C1059.86 657.309 1061.52 661.683 1061.52 667.109C1061.52 672.701 1059.8 677.241 1056.37 680.729C1052.94 684.162 1049.01 685.879 1044.58 685.879C1040.43 685.879 1036.94 684.162 1034.11 680.729ZM1043.5 656.23C1040.73 656.23 1038.38 657.226 1036.44 659.219C1034.56 661.157 1033.62 663.926 1033.62 667.524C1033.62 671.013 1034.56 673.726 1036.44 675.663C1038.38 677.601 1040.73 678.57 1043.5 678.57C1046.38 678.57 1048.7 677.49 1050.48 675.331C1052.3 673.172 1053.22 670.542 1053.22 667.441C1053.22 664.286 1052.3 661.628 1050.48 659.469C1048.7 657.309 1046.38 656.23 1043.5 656.23Z" fill="white"/>
+<path d="M1098.75 649.835V684.799H1090.61V657.309H1080.31V671.179C1080.31 675.497 1079.21 678.847 1076.99 681.228C1074.17 684.384 1070.35 685.574 1065.53 684.799V677.324C1067.91 677.878 1069.82 677.352 1071.26 675.746C1072.09 674.75 1072.51 673.227 1072.51 671.179V649.835H1098.75Z" fill="white"/>
+<path d="M1109.03 684.799V649.835H1117.16V662.209H1121.82C1123.31 662.209 1124.53 662.265 1125.47 662.375C1126.41 662.431 1127.55 662.735 1128.87 663.289C1130.2 663.843 1131.37 664.673 1132.36 665.78C1134.19 667.829 1135.1 670.376 1135.1 673.421C1135.1 676.909 1134.05 679.705 1131.95 681.809C1131.01 682.75 1129.87 683.47 1128.54 683.968C1127.27 684.411 1126.19 684.661 1125.3 684.716C1124.47 684.771 1123.28 684.799 1121.73 684.799H1109.03ZM1117.16 677.823H1120.9C1122.89 677.823 1124.31 677.573 1125.14 677.075C1126.36 676.189 1126.96 674.999 1126.96 673.504C1126.96 671.954 1126.38 670.791 1125.22 670.016C1124.33 669.462 1122.92 669.185 1120.98 669.185H1117.16V677.823ZM1138.76 684.799V649.835H1146.9V684.799H1138.76Z" fill="white"/>
+<path d="M1157.2 649.835H1165.34V662.292L1176.97 649.835H1187.76L1172.48 665.116L1182.53 677.324H1188.59V694.765H1181.12V684.799H1178.3L1166.67 670.431L1165.34 671.76V684.799H1157.2V649.835Z" fill="white"/>
+<path d="M1221.95 680.729V703.817H1213.81V649.835H1221.95V653.655C1224.61 650.499 1228.07 648.921 1232.33 648.921C1237.09 648.921 1241.11 650.61 1244.37 653.987C1247.7 657.309 1249.36 661.683 1249.36 667.109C1249.36 672.701 1247.64 677.241 1244.21 680.729C1240.78 684.162 1236.84 685.879 1232.41 685.879C1228.26 685.879 1224.77 684.162 1221.95 680.729ZM1231.34 656.23C1228.57 656.23 1226.21 657.226 1224.28 659.219C1222.39 661.157 1221.45 663.926 1221.45 667.524C1221.45 671.013 1222.39 673.726 1224.28 675.663C1226.21 677.601 1228.57 678.57 1231.34 678.57C1234.21 678.57 1236.54 677.49 1238.31 675.331C1240.14 673.172 1241.05 670.542 1241.05 667.441C1241.05 664.286 1240.14 661.628 1238.31 659.469C1236.54 657.309 1234.21 656.23 1231.34 656.23Z" fill="white"/>
+<path d="M1282.35 673.006L1289.16 676.826C1287.61 679.594 1285.65 681.726 1283.26 683.221C1280.55 684.993 1277.12 685.879 1272.97 685.879C1268.09 685.879 1264.16 684.384 1261.17 681.394C1257.74 677.961 1256.02 673.504 1256.02 668.023C1256.02 662.265 1257.88 657.475 1261.59 653.655C1264.74 650.499 1268.65 648.921 1273.3 648.921C1277.84 648.921 1281.58 650.444 1284.51 653.489C1287.78 656.866 1289.41 661.794 1289.41 668.272V669.268H1264.33C1264.55 672.203 1265.55 674.556 1267.32 676.328C1268.81 677.823 1270.89 678.57 1273.55 678.57C1275.71 678.57 1277.56 677.989 1279.11 676.826C1280.39 675.829 1281.46 674.556 1282.35 673.006ZM1264.91 662.624H1281.11C1280.77 660.687 1279.94 659.109 1278.61 657.891C1277.17 656.562 1275.35 655.897 1273.13 655.897C1270.81 655.897 1268.9 656.645 1267.4 658.14C1266.18 659.247 1265.35 660.742 1264.91 662.624Z" fill="white"/>
+<path d="M1302.65 658.887L1297.42 654.319C1298.75 652.714 1300.52 651.413 1302.73 650.416C1305.06 649.419 1307.8 648.921 1310.96 648.921C1314.61 648.921 1317.57 649.724 1319.84 651.33C1322.28 653.101 1323.5 655.482 1323.5 658.472C1323.5 660.41 1323 662.015 1322 663.289C1321.17 664.396 1320.06 665.227 1318.68 665.78C1320.78 666.223 1322.47 667.081 1323.74 668.355C1325.24 669.85 1325.99 671.788 1325.99 674.168C1325.99 677.324 1324.99 679.899 1323 681.892C1320.34 684.55 1316.24 685.879 1310.71 685.879C1307 685.879 1303.95 685.186 1301.57 683.802C1299.08 682.363 1297.25 680.286 1296.09 677.574L1302.57 674.252C1303.34 675.913 1304.37 677.131 1305.64 677.906C1307.02 678.792 1308.77 679.235 1310.87 679.235C1313.42 679.235 1315.27 678.653 1316.44 677.49C1317.27 676.549 1317.68 675.525 1317.68 674.418C1317.68 673.255 1317.32 672.314 1316.6 671.594C1315.66 670.597 1313.72 670.099 1310.79 670.099H1307.13V663.455H1310.21C1311.98 663.455 1313.31 663.15 1314.19 662.541C1315.19 661.766 1315.69 660.742 1315.69 659.469C1315.69 658.14 1315.19 657.143 1314.19 656.479C1313.36 655.87 1312.06 655.565 1310.29 655.565C1308.63 655.565 1307.11 655.897 1305.72 656.562C1304.56 657.115 1303.54 657.891 1302.65 658.887Z" fill="white"/>
+<path d="M1358.99 673.006L1365.8 676.826C1364.25 679.594 1362.29 681.726 1359.91 683.221C1357.19 684.993 1353.76 685.879 1349.61 685.879C1344.74 685.879 1340.81 684.384 1337.82 681.394C1334.38 677.961 1332.67 673.504 1332.67 668.023C1332.67 662.265 1334.52 657.475 1338.23 653.655C1341.39 650.499 1345.29 648.921 1349.94 648.921C1354.48 648.921 1358.22 650.444 1361.15 653.489C1364.42 656.866 1366.05 661.794 1366.05 668.272V669.268H1340.97C1341.19 672.203 1342.19 674.556 1343.96 676.328C1345.46 677.823 1347.53 678.57 1350.19 678.57C1352.35 678.57 1354.2 677.989 1355.76 676.826C1357.03 675.829 1358.11 674.556 1358.99 673.006ZM1341.55 662.624H1357.75C1357.42 660.687 1356.59 659.109 1355.26 657.891C1353.82 656.562 1351.99 655.897 1349.78 655.897C1347.45 655.897 1345.54 656.645 1344.04 658.14C1342.83 659.247 1342 660.742 1341.55 662.624Z" fill="white"/>
+<path d="M1382.7 680.729V703.817H1374.56V649.835H1382.7V653.655C1385.36 650.499 1388.82 648.921 1393.08 648.921C1397.84 648.921 1401.86 650.61 1405.12 653.987C1408.44 657.309 1410.1 661.683 1410.1 667.109C1410.1 672.701 1408.39 677.241 1404.96 680.729C1401.52 684.162 1397.59 685.879 1393.16 685.879C1389.01 685.879 1385.52 684.162 1382.7 680.729ZM1392.08 656.23C1389.31 656.23 1386.96 657.226 1385.02 659.219C1383.14 661.157 1382.2 663.926 1382.2 667.524C1382.2 671.013 1383.14 673.726 1385.02 675.663C1386.96 677.601 1389.31 678.57 1392.08 678.57C1394.96 678.57 1397.29 677.49 1399.06 675.331C1400.89 673.172 1401.8 670.542 1401.8 667.441C1401.8 664.286 1400.89 661.628 1399.06 659.469C1397.29 657.309 1394.96 656.23 1392.08 656.23Z" fill="white"/>
+<path d="M1418.6 649.835H1432.3C1435.79 649.835 1438.45 650.527 1440.27 651.911C1442.43 653.627 1443.51 655.87 1443.51 658.638C1443.51 661.794 1442.13 664.064 1439.36 665.448C1441.13 665.78 1442.71 666.555 1444.1 667.774C1445.92 669.435 1446.84 671.677 1446.84 674.501C1446.84 677.878 1445.56 680.536 1443.02 682.474C1440.91 684.024 1438.23 684.799 1434.96 684.799H1418.6V649.835ZM1426.74 663.455H1430.89C1432.33 663.455 1433.41 663.206 1434.13 662.708C1435.18 662.043 1435.71 661.102 1435.71 659.884C1435.71 658.721 1435.24 657.808 1434.3 657.143C1433.63 656.7 1432.44 656.479 1430.72 656.479H1426.74V663.455ZM1426.74 678.155H1432.8C1434.63 678.155 1436.04 677.823 1437.04 677.158C1438.14 676.438 1438.7 675.414 1438.7 674.085C1438.7 672.646 1438.17 671.622 1437.12 671.013C1436.18 670.404 1434.82 670.099 1433.05 670.099H1426.74V678.155Z" fill="white"/>
+<path d="M1455.34 649.835H1463.48V684.799H1455.34V649.835ZM1455.67 639.121C1454.67 638.125 1454.18 636.879 1454.18 635.384C1454.18 633.889 1454.67 632.643 1455.67 631.647C1456.67 630.65 1457.91 630.152 1459.41 630.152C1460.9 630.152 1462.15 630.65 1463.15 631.647C1464.14 632.643 1464.64 633.889 1464.64 635.384C1464.64 636.879 1464.14 638.125 1463.15 639.121C1462.15 640.118 1460.9 640.616 1459.41 640.616C1457.91 640.616 1456.67 640.118 1455.67 639.121Z" fill="white"/>
+<path d="M274.608 211.636C281.741 211.636 286.44 219.054 283.384 225.486L180.145 442.718C178.537 446.101 175.121 448.257 171.37 448.257H118.249C111.116 448.257 106.417 440.84 109.473 434.408L212.712 217.175C214.32 213.792 217.736 211.636 221.487 211.636H274.608Z" fill="url(#paint0_linear_3374_55)"/>
+<path d="M323.701 134.045C327.456 134.045 330.874 136.206 332.48 139.593L472.219 434.314C475.268 440.746 470.568 448.156 463.439 448.156H410.465C406.71 448.156 403.292 445.996 401.685 442.609L261.947 147.887C258.898 141.456 263.598 134.046 270.726 134.045H323.701Z" fill="url(#paint1_linear_3374_55)"/>
+<path d="M282.478 330.662C286.331 325.096 294.558 325.096 298.411 330.662L337.365 386.929C341.814 393.355 337.215 402.133 329.399 402.133H251.49C243.674 402.133 239.075 393.355 243.523 386.929L282.478 330.662Z" fill="url(#paint2_linear_3374_55)"/>
+<defs>
+<linearGradient id="paint0_linear_3374_55" x1="402.093" y1="386.151" x2="227.026" y2="86.1105" gradientUnits="userSpaceOnUse">
+<stop offset="0.259564" stop-color="#4C008E"/>
+<stop offset="0.974705" stop-color="#3F8BEE"/>
+</linearGradient>
+<linearGradient id="paint1_linear_3374_55" x1="402.093" y1="386.151" x2="227.026" y2="86.1105" gradientUnits="userSpaceOnUse">
+<stop offset="0.259564" stop-color="#4C008E"/>
+<stop offset="0.974705" stop-color="#3F8BEE"/>
+</linearGradient>
+<linearGradient id="paint2_linear_3374_55" x1="402.093" y1="386.151" x2="227.026" y2="86.1105" gradientUnits="userSpaceOnUse">
+<stop offset="0.259564" stop-color="#4C008E"/>
+<stop offset="0.974705" stop-color="#3F8BEE"/>
+</linearGradient>
+</defs></symbol>
+<symbol id="aa-lockup-color" viewBox="0 0 1512 704"><path d="M505.666 0H74.0892C33.2357 0 0 33.1156 0 73.8265V396.336C0 458.725 48.0882 526.294 142.927 597.167C211.03 648.056 278.052 681.642 280.87 683.048C283.708 684.459 286.793 685.165 289.883 685.165C292.968 685.165 296.053 684.459 298.891 683.048C301.708 681.642 368.73 648.061 436.834 597.167C531.672 526.294 579.755 458.725 579.755 396.336V73.8265C579.755 33.1156 546.519 0 505.666 0Z" fill="url(#paint0_linear_3374_46)"/>
+<path d="M819.647 156.631L807.97 127.206H749.121L737.211 156.631H699.846L762.666 0.866529H795.593L857.012 156.631H819.647ZM759.63 99.6495H798.162L779.013 47.3389L759.63 99.6495Z" fill="#4C008E"/>
+<path d="M886.726 52.4765H978.97V130.942H994.383V186.055H964.492V156.631H893.265V186.055H863.373V130.942C868.822 130.32 873.571 128.14 877.619 124.404C881.511 120.823 884.002 116.541 885.092 111.559C886.181 106.577 886.726 100.35 886.726 92.8771V52.4765ZM945.342 130.942V78.1647H917.552V98.0147C917.552 105.643 916.774 112.027 915.217 117.164C913.66 122.146 910.546 126.739 905.876 130.942H945.342Z" fill="#4C008E"/>
+<path d="M1089.25 64.153V52.4765H1122.88V156.631H1089.25V144.02C1082.25 154.762 1071.97 160.134 1058.43 160.134C1042.39 160.134 1029.39 154.84 1019.43 144.254C1009.31 133.511 1004.25 120.511 1004.25 105.254C1004.25 87.973 1009.62 73.9612 1020.36 63.2189C1029.86 53.722 1041.92 48.9736 1056.56 48.9736C1070.88 48.9736 1081.78 54.0334 1089.25 64.153ZM1064.97 77.9312C1057.65 77.9312 1051.5 80.4222 1046.52 85.4042C1041.38 90.5418 1038.81 96.8471 1038.81 104.32C1038.81 111.793 1041.15 118.02 1045.82 123.002C1050.95 128.451 1057.57 131.176 1065.67 131.176C1072.52 131.176 1078.35 128.763 1083.18 123.937C1088.63 118.799 1091.35 112.26 1091.35 104.32C1091.35 96.38 1088.79 89.9969 1083.65 85.1706C1078.67 80.3444 1072.44 77.9312 1064.97 77.9312Z" fill="#4C008E"/>
+<path d="M1250.77 52.4765V156.631H1217.15V79.5659H1189.82V111.559C1189.82 127.439 1186.4 139.272 1179.55 147.056C1172.85 154.373 1163.28 158.032 1150.82 158.032C1146.31 158.032 1141.95 157.487 1137.75 156.397V129.775C1144.91 131.799 1150.28 130.787 1153.86 126.739C1156.66 123.002 1158.06 117.476 1158.06 110.158V52.4765H1250.77Z" fill="#4C008E"/>
+<path d="M782.635 259.321V247.645H816.263V351.799H782.635V339.188C775.629 349.931 765.354 355.302 751.809 355.302C735.773 355.302 722.773 350.008 712.809 339.422C702.69 328.679 697.63 315.68 697.63 300.422C697.63 283.141 703.001 269.129 713.744 258.387C723.24 248.89 735.306 244.142 749.941 244.142C764.264 244.142 775.162 249.202 782.635 259.321ZM758.348 273.099C751.03 273.099 744.881 275.59 739.899 280.572C734.761 285.71 732.192 292.015 732.192 299.488C732.192 306.961 734.528 313.189 739.198 318.171C744.336 323.62 750.953 326.344 759.048 326.344C765.898 326.344 771.737 323.931 776.563 319.105C782.012 313.967 784.736 307.428 784.736 299.488C784.736 291.548 782.168 285.165 777.03 280.339C772.048 275.513 765.821 273.099 758.348 273.099Z" fill="#4C008E"/>
+<path d="M851.679 278.938L838.835 256.519C844.44 252.938 850.2 250.058 856.116 247.878C863.122 245.387 871.296 244.142 880.637 244.142C896.828 244.142 908.582 247.723 915.9 254.884C921.037 259.866 923.606 266.249 923.606 274.034C923.606 281.507 921.504 287.423 917.301 291.782C914.498 294.584 911.54 296.53 908.427 297.62C914.187 299.021 918.858 301.512 922.439 305.093C927.109 309.608 929.444 315.368 929.444 322.374C929.444 330.781 926.409 338.021 920.337 344.092C912.708 351.565 899.942 355.302 882.038 355.302C871.296 355.302 861.799 353.745 853.547 350.631C846.697 347.985 840.47 344.326 834.865 339.655L849.11 317.47C853.314 321.051 857.595 323.853 861.954 325.877C867.092 328.057 872.463 329.146 878.068 329.146C883.206 329.146 887.253 328.29 890.211 326.578C893.325 324.709 894.882 322.063 894.882 318.638C894.882 315.524 893.247 313.189 889.978 311.632C887.02 310.386 882.972 309.764 877.834 309.764H865.224V286.878H874.799C880.248 286.878 884.451 286.255 887.409 285.009C890.679 283.453 892.313 281.117 892.313 278.004C892.313 275.046 890.601 272.788 887.176 271.231C884.218 269.986 880.715 269.363 876.667 269.363C871.84 269.363 867.248 270.297 862.889 272.165C858.529 274.034 854.793 276.291 851.679 278.938Z" fill="#4C008E"/>
+<path d="M1030.3 259.321V247.645H1063.93V351.799H1030.3V339.188C1023.3 349.931 1013.02 355.302 999.478 355.302C983.442 355.302 970.442 350.008 960.478 339.422C950.359 328.679 945.299 315.68 945.299 300.422C945.299 283.141 950.67 269.129 961.412 258.387C970.909 248.89 982.975 244.142 997.609 244.142C1011.93 244.142 1022.83 249.202 1030.3 259.321ZM1006.02 273.099C998.699 273.099 992.55 275.59 987.568 280.572C982.43 285.71 979.861 292.015 979.861 299.488C979.861 306.961 982.196 313.189 986.867 318.171C992.005 323.62 998.621 326.344 1006.72 326.344C1013.57 326.344 1019.41 323.931 1024.23 319.105C1029.68 313.967 1032.41 307.428 1032.41 299.488C1032.41 291.548 1029.84 285.165 1024.7 280.339C1019.72 275.513 1013.49 273.099 1006.02 273.099Z" fill="#4C008E"/>
+<path d="M1082.53 351.799L1100.75 247.645H1127.37L1154.46 305.56L1181.55 247.645H1208.17L1226.39 351.799H1194.16L1185.75 296.452L1160.07 351.799H1148.86L1123.17 296.452L1114.76 351.799H1082.53Z" fill="#4C008E"/>
+<path d="M1324.95 259.321V247.645H1358.58V351.799H1324.95V339.188C1317.95 349.931 1307.67 355.302 1294.13 355.302C1278.09 355.302 1265.09 350.008 1255.13 339.422C1245.01 328.679 1239.95 315.68 1239.95 300.422C1239.95 283.141 1245.32 269.129 1256.06 258.387C1265.56 248.89 1277.62 244.142 1292.26 244.142C1306.58 244.142 1317.48 249.202 1324.95 259.321ZM1300.66 273.099C1293.35 273.099 1287.2 275.59 1282.22 280.572C1277.08 285.71 1274.51 292.015 1274.51 299.488C1274.51 306.961 1276.84 313.189 1281.52 318.171C1286.65 323.62 1293.27 326.344 1301.37 326.344C1308.22 326.344 1314.05 323.931 1318.88 319.105C1324.33 313.967 1327.05 307.428 1327.05 299.488C1327.05 291.548 1324.48 285.165 1319.35 280.339C1314.37 275.513 1308.14 273.099 1300.66 273.099Z" fill="#4C008E"/>
+<path d="M1463.12 274.734H1435.1V351.799H1401.47V274.734H1373.45V247.645H1463.12V274.734Z" fill="#4C008E"/>
+<path d="M695.295 546.967L713.51 442.813H740.132L767.222 500.728L794.311 442.813H820.934L839.149 546.967H806.922L798.515 491.621L772.826 546.967H761.617L735.929 491.621L727.522 546.967H695.295Z" fill="#4C008E"/>
+<path d="M887.971 480.645H933.509C932.264 475.663 930.006 471.615 926.737 468.501C922.533 464.609 917.24 462.663 910.857 462.663C904.007 462.663 898.324 464.92 893.809 469.435C890.696 472.705 888.749 476.441 887.971 480.645ZM964.569 497.225V500.728H886.803C886.803 507.89 888.905 513.806 893.109 518.477C897.157 522.836 902.917 525.015 910.39 525.015C915.995 525.015 920.509 524.003 923.935 521.979C926.581 520.578 928.994 517.698 931.174 513.339L962.934 516.608C959.353 527.973 952.659 536.692 942.85 542.764C934.288 547.901 923.312 550.47 909.923 550.47C892.175 550.47 878.318 545.488 868.355 535.524C857.924 525.093 852.708 511.704 852.708 495.357C852.708 478.854 858.001 465.154 868.588 454.256C878.552 444.292 891.863 439.31 908.522 439.31C926.114 439.31 939.892 444.526 949.856 454.957C959.665 465.387 964.569 479.477 964.569 497.225Z" fill="#4C008E"/>
+<path d="M985.557 546.967V442.813H1019.19V484.148L1053.28 442.813H1095.08L1050.48 491.154L1098.12 546.967H1054.68L1019.19 500.728V546.967H985.557Z" fill="#4C008E"/>
+<path d="M1190.14 469.902H1162.11V546.967H1128.49V469.902H1100.46V442.813H1190.14V469.902Z" fill="#4C008E"/>
+<path d="M1235.3 480.645H1280.84C1279.59 475.663 1277.34 471.615 1274.07 468.501C1269.86 464.609 1264.57 462.663 1258.19 462.663C1251.34 462.663 1245.65 464.92 1241.14 469.435C1238.02 472.705 1236.08 476.441 1235.3 480.645ZM1311.9 497.225V500.728H1234.13C1234.13 507.89 1236.23 513.806 1240.44 518.477C1244.49 522.836 1250.25 525.015 1257.72 525.015C1263.32 525.015 1267.84 524.003 1271.26 521.979C1273.91 520.578 1276.32 517.698 1278.5 513.339L1310.26 516.608C1306.68 527.973 1299.99 536.692 1290.18 542.764C1281.62 547.901 1270.64 550.47 1257.25 550.47C1239.5 550.47 1225.65 545.488 1215.68 535.524C1205.25 525.093 1200.04 511.704 1200.04 495.357C1200.04 478.854 1205.33 465.154 1215.92 454.256C1225.88 444.292 1239.19 439.31 1255.85 439.31C1273.44 439.31 1287.22 444.526 1297.19 454.957C1306.99 465.387 1311.9 479.477 1311.9 497.225Z" fill="#4C008E"/>
+<path d="M1418.36 376.491H1447.78C1446.69 387.856 1442.57 396.963 1435.41 403.814C1430.27 408.951 1421.86 413.155 1410.18 416.424L1398.51 419.694C1384.19 423.741 1374.77 427.789 1370.25 431.837C1364.02 437.597 1360.44 444.915 1359.51 453.789H1360.68C1369.39 444.292 1381.3 439.544 1396.41 439.544C1413.22 439.544 1426.69 444.448 1436.81 454.256C1447.08 464.22 1452.22 476.986 1452.22 492.555C1452.22 509.525 1446.62 523.458 1435.41 534.357C1424.51 545.099 1409.72 550.47 1391.04 550.47C1373.13 550.47 1358.81 545.332 1348.07 535.057C1335.77 522.914 1329.62 505.01 1329.62 481.345C1329.62 449.118 1336.47 425.688 1350.17 411.053C1358.26 402.49 1370.72 396.341 1387.53 392.604L1393.84 391.203C1405.98 388.556 1413.3 385.832 1415.79 383.029C1417.5 381.161 1418.36 378.982 1418.36 376.491ZM1390.8 468.034C1383.33 468.034 1377.1 470.525 1372.12 475.507C1366.83 480.8 1364.18 487.339 1364.18 495.124C1364.18 502.596 1366.75 508.902 1371.89 514.039C1376.87 519.021 1383.33 521.512 1391.27 521.512C1397.96 521.512 1403.8 519.255 1408.78 514.74C1414.7 509.291 1417.66 502.441 1417.66 494.189C1417.66 487.339 1415.09 481.19 1409.95 475.741C1404.81 470.603 1398.43 468.034 1390.8 468.034Z" fill="#4C008E"/>
+<path d="M1475.48 442.813H1509.1V546.967H1475.48V442.813ZM1478.28 412.454C1474.54 408.562 1472.67 403.891 1472.67 398.442C1472.67 392.993 1474.54 388.401 1478.28 384.664C1482.17 380.772 1486.84 378.826 1492.29 378.826C1497.74 378.826 1502.33 380.772 1506.07 384.664C1509.96 388.401 1511.91 392.993 1511.91 398.442C1511.91 403.891 1509.96 408.562 1506.07 412.454C1502.33 416.191 1497.74 418.059 1492.29 418.059C1486.84 418.059 1482.17 416.191 1478.28 412.454Z" fill="#4C008E"/>
+<path d="M735.807 629.404V637.377H713.716V651.413H735.143V659.385H713.716V676.826H735.807V684.799H705.245V629.404H735.807Z" fill="#4C008E"/>
+<path d="M774.01 649.835V684.799H765.871V657.309H755.573V671.179C755.573 675.497 754.466 678.847 752.251 681.228C749.427 684.384 745.607 685.574 740.79 684.799V677.324C743.171 677.878 745.081 677.352 746.521 675.746C747.351 674.75 747.766 673.227 747.766 671.179V649.835H774.01Z" fill="#4C008E"/>
+<path d="M787.276 649.835H813.52V677.324H818.835V694.765H811.36V684.799H786.943V694.765H779.469V677.324C782.293 677.158 784.424 675.636 785.864 672.757C786.805 670.708 787.276 667.635 787.276 663.538V649.835ZM805.381 677.324V657.309H795.082V666.611C795.082 671.649 793.726 675.22 791.013 677.324H805.381Z" fill="#4C008E"/>
+<path d="M824.676 649.835H832.814V684.799H824.676V649.835ZM825.008 639.121C824.011 638.125 823.513 636.879 823.513 635.384C823.513 633.889 824.011 632.643 825.008 631.647C826.004 630.65 827.25 630.152 828.745 630.152C830.24 630.152 831.486 630.65 832.482 631.647C833.479 632.643 833.977 633.889 833.977 635.384C833.977 636.879 833.479 638.125 832.482 639.121C831.486 640.118 830.24 640.616 828.745 640.616C827.25 640.616 826.004 640.118 825.008 639.121Z" fill="#4C008E"/>
+<path d="M843.086 684.799V649.835H851.225V662.791H865.676V649.835H873.815V677.324H879.628V694.765H872.154V684.799H865.676V670.265H851.225V684.799H843.086Z" fill="#4C008E"/>
+<path d="M904.806 649.835H912.945V662.292L924.572 649.835H935.369L920.087 665.116L936.199 684.799H925.901L914.274 670.431L912.945 671.76V684.799H904.806V649.835Z" fill="#4C008E"/>
+<path d="M967.126 653.904V649.835H975.265V684.799H967.126V681.145C964.413 684.301 960.925 685.879 956.661 685.879C951.512 685.879 947.387 684.051 944.287 680.397C941.242 676.743 939.719 672.369 939.719 667.275C939.719 661.739 941.352 657.309 944.619 653.987C947.941 650.61 951.983 648.921 956.744 648.921C961.118 648.921 964.579 650.582 967.126 653.904ZM957.741 656.23C954.862 656.23 952.509 657.309 950.682 659.469C948.91 661.628 948.024 664.286 948.024 667.441C948.024 670.542 948.91 673.172 950.682 675.331C952.509 677.49 954.862 678.57 957.741 678.57C960.509 678.57 962.835 677.601 964.717 675.663C966.655 673.726 967.624 671.013 967.624 667.524C967.624 663.926 966.655 661.157 964.717 659.219C962.835 657.226 960.509 656.23 957.741 656.23Z" fill="#4C008E"/>
+<path d="M988.575 649.835H1014.82V677.324H1020.13V694.765H1012.66V684.799H988.243V694.765H980.769V677.324C983.592 677.158 985.724 675.636 987.163 672.757C988.105 670.708 988.575 667.635 988.575 663.538V649.835ZM1006.68 677.324V657.309H996.382V666.611C996.382 671.649 995.026 675.22 992.313 677.324H1006.68Z" fill="#4C008E"/>
+<path d="M1034.11 680.729V703.817H1025.98V649.835H1034.11V653.655C1036.77 650.499 1040.23 648.921 1044.5 648.921C1049.26 648.921 1053.27 650.61 1056.54 653.987C1059.86 657.309 1061.52 661.683 1061.52 667.109C1061.52 672.701 1059.8 677.241 1056.37 680.729C1052.94 684.162 1049.01 685.879 1044.58 685.879C1040.43 685.879 1036.94 684.162 1034.11 680.729ZM1043.5 656.23C1040.73 656.23 1038.38 657.226 1036.44 659.219C1034.56 661.157 1033.62 663.926 1033.62 667.524C1033.62 671.013 1034.56 673.726 1036.44 675.663C1038.38 677.601 1040.73 678.57 1043.5 678.57C1046.38 678.57 1048.7 677.49 1050.48 675.331C1052.3 673.172 1053.22 670.542 1053.22 667.441C1053.22 664.286 1052.3 661.628 1050.48 659.469C1048.7 657.309 1046.38 656.23 1043.5 656.23Z" fill="#4C008E"/>
+<path d="M1098.75 649.835V684.799H1090.61V657.309H1080.31V671.179C1080.31 675.497 1079.21 678.847 1076.99 681.228C1074.17 684.384 1070.35 685.574 1065.53 684.799V677.324C1067.91 677.878 1069.82 677.352 1071.26 675.746C1072.09 674.75 1072.51 673.227 1072.51 671.179V649.835H1098.75Z" fill="#4C008E"/>
+<path d="M1109.03 684.799V649.835H1117.16V662.209H1121.82C1123.31 662.209 1124.53 662.265 1125.47 662.375C1126.41 662.431 1127.55 662.735 1128.87 663.289C1130.2 663.843 1131.37 664.673 1132.36 665.78C1134.19 667.829 1135.1 670.376 1135.1 673.421C1135.1 676.909 1134.05 679.705 1131.95 681.809C1131.01 682.75 1129.87 683.47 1128.54 683.968C1127.27 684.411 1126.19 684.661 1125.3 684.716C1124.47 684.771 1123.28 684.799 1121.73 684.799H1109.03ZM1117.16 677.823H1120.9C1122.89 677.823 1124.31 677.573 1125.14 677.075C1126.36 676.189 1126.96 674.999 1126.96 673.504C1126.96 671.954 1126.38 670.791 1125.22 670.016C1124.33 669.462 1122.92 669.185 1120.98 669.185H1117.16V677.823ZM1138.76 684.799V649.835H1146.9V684.799H1138.76Z" fill="#4C008E"/>
+<path d="M1157.2 649.835H1165.34V662.292L1176.97 649.835H1187.76L1172.48 665.116L1182.53 677.324H1188.59V694.765H1181.12V684.799H1178.3L1166.67 670.431L1165.34 671.76V684.799H1157.2V649.835Z" fill="#4C008E"/>
+<path d="M1221.95 680.729V703.817H1213.81V649.835H1221.95V653.655C1224.61 650.499 1228.07 648.921 1232.33 648.921C1237.09 648.921 1241.11 650.61 1244.37 653.987C1247.7 657.309 1249.36 661.683 1249.36 667.109C1249.36 672.701 1247.64 677.241 1244.21 680.729C1240.78 684.162 1236.84 685.879 1232.41 685.879C1228.26 685.879 1224.77 684.162 1221.95 680.729ZM1231.34 656.23C1228.57 656.23 1226.21 657.226 1224.28 659.219C1222.39 661.157 1221.45 663.926 1221.45 667.524C1221.45 671.013 1222.39 673.726 1224.28 675.663C1226.21 677.601 1228.57 678.57 1231.34 678.57C1234.21 678.57 1236.54 677.49 1238.31 675.331C1240.14 673.172 1241.05 670.542 1241.05 667.441C1241.05 664.286 1240.14 661.628 1238.31 659.469C1236.54 657.309 1234.21 656.23 1231.34 656.23Z" fill="#4C008E"/>
+<path d="M1282.35 673.006L1289.16 676.826C1287.61 679.594 1285.65 681.726 1283.26 683.221C1280.55 684.993 1277.12 685.879 1272.97 685.879C1268.09 685.879 1264.16 684.384 1261.17 681.394C1257.74 677.961 1256.02 673.504 1256.02 668.023C1256.02 662.265 1257.88 657.475 1261.59 653.655C1264.74 650.499 1268.65 648.921 1273.3 648.921C1277.84 648.921 1281.58 650.444 1284.51 653.489C1287.78 656.866 1289.41 661.794 1289.41 668.272V669.268H1264.33C1264.55 672.203 1265.55 674.556 1267.32 676.328C1268.81 677.823 1270.89 678.57 1273.55 678.57C1275.71 678.57 1277.56 677.989 1279.11 676.826C1280.39 675.829 1281.46 674.556 1282.35 673.006ZM1264.91 662.624H1281.11C1280.77 660.687 1279.94 659.109 1278.61 657.891C1277.17 656.562 1275.35 655.897 1273.13 655.897C1270.81 655.897 1268.9 656.645 1267.4 658.14C1266.18 659.247 1265.35 660.742 1264.91 662.624Z" fill="#4C008E"/>
+<path d="M1302.65 658.887L1297.42 654.319C1298.75 652.714 1300.52 651.413 1302.73 650.416C1305.06 649.419 1307.8 648.921 1310.96 648.921C1314.61 648.921 1317.57 649.724 1319.84 651.33C1322.28 653.101 1323.5 655.482 1323.5 658.472C1323.5 660.41 1323 662.015 1322 663.289C1321.17 664.396 1320.06 665.227 1318.68 665.78C1320.78 666.223 1322.47 667.081 1323.74 668.355C1325.24 669.85 1325.99 671.788 1325.99 674.168C1325.99 677.324 1324.99 679.899 1323 681.892C1320.34 684.55 1316.24 685.879 1310.71 685.879C1307 685.879 1303.95 685.186 1301.57 683.802C1299.08 682.363 1297.25 680.286 1296.09 677.574L1302.57 674.252C1303.34 675.913 1304.37 677.131 1305.64 677.906C1307.02 678.792 1308.77 679.235 1310.87 679.235C1313.42 679.235 1315.27 678.653 1316.44 677.49C1317.27 676.549 1317.68 675.525 1317.68 674.418C1317.68 673.255 1317.32 672.314 1316.6 671.594C1315.66 670.597 1313.72 670.099 1310.79 670.099H1307.13V663.455H1310.21C1311.98 663.455 1313.31 663.15 1314.19 662.541C1315.19 661.766 1315.69 660.742 1315.69 659.469C1315.69 658.14 1315.19 657.143 1314.19 656.479C1313.36 655.87 1312.06 655.565 1310.29 655.565C1308.63 655.565 1307.11 655.897 1305.72 656.562C1304.56 657.115 1303.54 657.891 1302.65 658.887Z" fill="#4C008E"/>
+<path d="M1358.99 673.006L1365.8 676.826C1364.25 679.594 1362.29 681.726 1359.91 683.221C1357.19 684.993 1353.76 685.879 1349.61 685.879C1344.74 685.879 1340.81 684.384 1337.82 681.394C1334.38 677.961 1332.67 673.504 1332.67 668.023C1332.67 662.265 1334.52 657.475 1338.23 653.655C1341.39 650.499 1345.29 648.921 1349.94 648.921C1354.48 648.921 1358.22 650.444 1361.15 653.489C1364.42 656.866 1366.05 661.794 1366.05 668.272V669.268H1340.97C1341.19 672.203 1342.19 674.556 1343.96 676.328C1345.46 677.823 1347.53 678.57 1350.19 678.57C1352.35 678.57 1354.2 677.989 1355.76 676.826C1357.03 675.829 1358.11 674.556 1358.99 673.006ZM1341.55 662.624H1357.75C1357.42 660.687 1356.59 659.109 1355.26 657.891C1353.82 656.562 1351.99 655.897 1349.78 655.897C1347.45 655.897 1345.54 656.645 1344.04 658.14C1342.83 659.247 1342 660.742 1341.55 662.624Z" fill="#4C008E"/>
+<path d="M1382.7 680.729V703.817H1374.56V649.835H1382.7V653.655C1385.36 650.499 1388.82 648.921 1393.08 648.921C1397.84 648.921 1401.86 650.61 1405.12 653.987C1408.44 657.309 1410.1 661.683 1410.1 667.109C1410.1 672.701 1408.39 677.241 1404.96 680.729C1401.52 684.162 1397.59 685.879 1393.16 685.879C1389.01 685.879 1385.52 684.162 1382.7 680.729ZM1392.08 656.23C1389.31 656.23 1386.96 657.226 1385.02 659.219C1383.14 661.157 1382.2 663.926 1382.2 667.524C1382.2 671.013 1383.14 673.726 1385.02 675.663C1386.96 677.601 1389.31 678.57 1392.08 678.57C1394.96 678.57 1397.29 677.49 1399.06 675.331C1400.89 673.172 1401.8 670.542 1401.8 667.441C1401.8 664.286 1400.89 661.628 1399.06 659.469C1397.29 657.309 1394.96 656.23 1392.08 656.23Z" fill="#4C008E"/>
+<path d="M1418.6 649.835H1432.3C1435.79 649.835 1438.45 650.527 1440.27 651.911C1442.43 653.627 1443.51 655.87 1443.51 658.638C1443.51 661.794 1442.13 664.064 1439.36 665.448C1441.13 665.78 1442.71 666.555 1444.1 667.774C1445.92 669.435 1446.84 671.677 1446.84 674.501C1446.84 677.878 1445.56 680.536 1443.02 682.474C1440.91 684.024 1438.23 684.799 1434.96 684.799H1418.6V649.835ZM1426.74 663.455H1430.89C1432.33 663.455 1433.41 663.206 1434.13 662.708C1435.18 662.043 1435.71 661.102 1435.71 659.884C1435.71 658.721 1435.24 657.808 1434.3 657.143C1433.63 656.7 1432.44 656.479 1430.72 656.479H1426.74V663.455ZM1426.74 678.155H1432.8C1434.63 678.155 1436.04 677.823 1437.04 677.158C1438.14 676.438 1438.7 675.414 1438.7 674.085C1438.7 672.646 1438.17 671.622 1437.12 671.013C1436.18 670.404 1434.82 670.099 1433.05 670.099H1426.74V678.155Z" fill="#4C008E"/>
+<path d="M1455.34 649.835H1463.48V684.799H1455.34V649.835ZM1455.67 639.121C1454.67 638.125 1454.18 636.879 1454.18 635.384C1454.18 633.889 1454.67 632.643 1455.67 631.647C1456.67 630.65 1457.91 630.152 1459.41 630.152C1460.9 630.152 1462.15 630.65 1463.15 631.647C1464.14 632.643 1464.64 633.889 1464.64 635.384C1464.64 636.879 1464.14 638.125 1463.15 639.121C1462.15 640.118 1460.9 640.616 1459.41 640.616C1457.91 640.616 1456.67 640.118 1455.67 639.121Z" fill="#4C008E"/>
+<path d="M274.608 211.636C281.741 211.636 286.44 219.054 283.384 225.486L180.145 442.718C178.537 446.101 175.121 448.257 171.37 448.257H118.249C111.116 448.257 106.417 440.84 109.473 434.408L212.712 217.175C214.32 213.792 217.736 211.636 221.487 211.636H274.608Z" fill="white"/>
+<path d="M323.701 134.045C327.456 134.045 330.874 136.206 332.48 139.593L472.219 434.314C475.268 440.746 470.568 448.156 463.439 448.156H410.465C406.71 448.156 403.292 445.996 401.685 442.609L261.947 147.887C258.898 141.456 263.598 134.046 270.726 134.045H323.701Z" fill="white"/>
+<path d="M282.478 330.662C286.331 325.096 294.558 325.096 298.411 330.662L337.365 386.929C341.814 393.355 337.215 402.133 329.399 402.133H251.49C243.674 402.133 239.075 393.355 243.523 386.929L282.478 330.662Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_3374_46" x1="466.757" y1="549.736" x2="38.9223" y2="15.0998" gradientUnits="userSpaceOnUse">
+<stop offset="0.259564" stop-color="#4C008E"/>
+<stop offset="0.974705" stop-color="#3F8BEE"/>
+</linearGradient>
+</defs></symbol>
+<symbol id="aa-shield" viewBox="0 0 852 1006"><path d="M742.449 0H108.782C48.7987 0 0 48.6222 0 108.396V581.924C0 673.527 70.6059 772.736 209.854 876.796C309.847 951.514 408.253 1000.83 412.389 1002.89C416.557 1004.96 421.086 1006 425.623 1006C430.152 1006 434.682 1004.96 438.849 1002.89C442.986 1000.83 541.392 951.522 641.385 876.796C780.633 772.736 851.231 673.527 851.231 581.924V108.396C851.231 48.6222 802.432 0 742.449 0Z" fill="url(#paint0_linear_3489_635)"/>
+<path d="M403.17 310.79C413.643 310.79 420.543 321.681 416.055 331.125L264.475 650.078C262.114 655.045 257.098 658.212 251.59 658.212H173.595C163.122 658.212 156.222 647.321 160.71 637.877L312.29 318.924C314.651 313.956 319.667 310.79 325.175 310.79H403.17ZM475.251 196.867C480.764 196.867 485.783 200.039 488.142 205.013L693.313 637.739C697.791 647.183 690.89 658.062 680.423 658.062H602.644C597.131 658.062 592.111 654.892 589.753 649.918L384.581 217.19C380.104 207.747 387.005 196.867 397.472 196.867H475.251ZM414.72 485.553C420.377 477.382 432.455 477.382 438.112 485.553L495.309 568.169C501.84 577.604 495.087 590.493 483.611 590.493H369.221C357.745 590.493 350.992 577.604 357.523 568.169L414.72 485.553Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_3489_635" x1="685.321" y1="807.156" x2="57.148" y2="22.1704" gradientUnits="userSpaceOnUse">
+<stop offset="0.259564" stop-color="#4C008E"/>
+<stop offset="0.974705" stop-color="#3F8BEE"/>
+</linearGradient>
+</defs></symbol>
+<symbol id="aa-white" viewBox="0 0 450 532"><path d="M392.493 1.96701e-05L57.5073 1.96701e-05C25.7973 1.96701e-05 5.37641e-05 25.704 5.37641e-05 57.3034V307.632C5.37641e-05 356.057 37.3256 408.504 110.938 463.515C163.799 503.014 215.821 529.083 218.008 530.175C220.211 531.27 222.606 531.818 225.004 531.818C227.399 531.818 229.793 531.27 231.996 530.175C234.183 529.083 286.205 503.018 339.066 463.515C412.679 408.504 450 356.057 450 307.632V57.3034C450 25.704 424.203 1.96701e-05 392.493 1.96701e-05Z" fill="white"/>
+<path d="M210.592 164.279C216.128 164.279 219.776 170.037 217.404 175.029L137.271 343.643C136.023 346.269 133.371 347.942 130.459 347.942H89.2279C83.6916 347.942 80.0436 342.185 82.4164 337.192L162.549 168.579C163.797 165.953 166.449 164.279 169.361 164.279H210.592ZM248.698 104.055C251.612 104.055 254.265 105.731 255.512 108.36L363.976 337.12C366.343 342.112 362.694 347.864 357.162 347.864H316.043C313.129 347.864 310.476 346.187 309.229 343.558L200.765 114.798C198.398 109.806 202.046 104.055 207.579 104.055H248.698ZM216.691 256.664C219.681 252.344 226.066 252.344 229.057 256.664L259.293 300.338C262.747 305.326 259.176 312.14 253.11 312.14H192.638C186.571 312.14 183.001 305.326 186.454 300.338L216.691 256.664Z" fill="url(#paint0_linear_3517_351)"/>
+<defs>
+<linearGradient id="paint0_linear_3517_351" x1="309.545" y1="299.736" x2="173.66" y2="66.8479" gradientUnits="userSpaceOnUse">
+<stop offset="0.259564" stop-color="#4C008E"/>
+<stop offset="0.974705" stop-color="#3F8BEE"/>
+</linearGradient>
+</defs></symbol>
+<symbol id="aa-mark" viewBox="0 0 450 532"><path d="M210.592 164.279C216.128 164.279 219.776 170.037 217.404 175.029L137.271 343.643C136.023 346.269 133.371 347.942 130.459 347.942H89.2279C83.6916 347.942 80.0436 342.185 82.4164 337.192L162.549 168.579C163.797 165.953 166.449 164.279 169.361 164.279H210.592ZM248.698 104.055C251.612 104.055 254.265 105.731 255.512 108.36L363.976 337.12C366.343 342.112 362.694 347.864 357.162 347.864H316.043C313.129 347.864 310.476 346.187 309.229 343.558L200.765 114.798C198.398 109.806 202.046 104.055 207.579 104.055H248.698ZM216.691 256.664C219.681 252.344 226.066 252.344 229.057 256.664L259.293 300.338C262.747 305.326 259.176 312.14 253.11 312.14H192.638C186.571 312.14 183.001 305.326 186.454 300.338L216.691 256.664Z" fill="currentColor"/></symbol>
+</svg>
+
+<div id="progress"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" data-goto="top" aria-label="Адал Азамат">
+      <svg class="lockup" viewBox="0 0 1512 704" role="img"><use href="#aa-lockup-color"/></svg>
+    </a>
+    <nav class="main" id="navMain">
+      <button data-goto="about" data-t="nav.about">О школе</button>
+      <button data-goto="faq" data-t="nav.faq">Вопросы</button>
+      <button data-goto="contacts" data-t="nav.contacts">Контакты</button>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="navMain">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="lang" role="group" aria-label="Тіл / Язык">
+      <button data-lang="kz" aria-pressed="false">ҚАЗ</button>
+      <button data-lang="ru" aria-pressed="true">РУС</button>
+    </div>
+    <button class="btn small" data-open-reg data-t="cta.register">Зарегистрироваться</button>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-row" id="tickerRow"></div>
+</div>
+
+<!-- ══════════════ АФИША ══════════════ -->
+<main>
+<div class="poster" id="top">
+    <div class="poster-photo"><img id="heroPhoto" alt=""></div>
+    <div class="poster-glow"></div>
+    <svg class="poster-mark" viewBox="0 0 178.3 170.1"><use href="#aa-mark"/></svg>
+    <div class="wrap">
+      <div class="poster-grid">
+        <div>
+          <span class="status"><i></i><span data-t="status.open">Регистрация открыта</span></span>
+          <h1 class="display poster-title" id="heroTitle"></h1>
+          <p class="lede" id="heroLede"></p>
+          <dl class="meta">
+            <div><dt data-t="meta.date">Дата и время</dt><dd id="heroDate"></dd></div>
+            <div><dt data-t="meta.place">Место</dt><dd id="heroPlace"></dd></div>
+          </dl>
+          <button class="btn hero-cta" data-open-reg data-t="cta.registerEvent">Зарегистрироваться на мероприятие</button>
+        </div>
+
+        <div class="pass">
+          <div>
+            <p class="label" style="margin-bottom:14px" data-t="count.title">До начала</p>
+            <div class="count" id="countdown">
+              <div><b data-c="d">—</b><span data-t="count.d">дней</span></div>
+              <div><b data-c="h">—</b><span data-t="count.h">часов</span></div>
+              <div><b data-c="m">—</b><span data-t="count.m">минут</span></div>
+              <div><b data-c="s">—</b><span data-t="count.s">секунд</span></div>
+            </div>
+          </div>
+          <div class="seats">
+            <div class="seats-head">
+              <span data-t="seats.label">Свободные места</span>
+              <b id="seatsNum">—</b>
+            </div>
+            <div class="track"><i id="seatsBar" style="width:0%"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кто мы -->
+  <section id="about" class="sec-dark">
+    <div class="wrap">
+      <div class="about-hero">
+        <div>
+          <span class="label" data-t="about.eyebrow">Кто мы</span>
+          <h2 class="display" style="margin-block:18px 24px" data-t="about.title">Что такое Школа Адал азамат</h2>
+          <p class="lede" data-t="about.p1"></p>
+          <p class="lede" style="margin-top:18px" data-t="about.p2"></p>
+        </div>
+        <div>
+          <div class="join">
+            <svg class="join-mark" viewBox="0 0 450 532" aria-hidden="true"><use href="#aa-mark"/></svg>
+            <p class="label" data-t="about.whoTitle">Кто может участвовать</p>
+            <p class="join-text" data-t="about.who"></p>
+            <a class="btn btn-light" id="joinBtn" href="https://ig.me/m/adal.azamat.mektebi" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+              </svg>
+              <span data-t="about.cta">Хочу присоединиться на обучение</span>
+            </a>
+            <p class="join-hint" id="joinHint"></p>
+          </div>
+        </div>
+      </div>
+      <div class="facts" id="facts"></div>
+      <p class="label" style="margin-top:52px" data-t="gallery.label">Открытие Школы Адал азамат</p>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <div class="ticker ticker-sm" aria-hidden="true"><div class="ticker-row"></div></div>
+
+  <!-- Частые вопросы -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" data-t="faq.eyebrow">Вопросы</span>
+        <h2 class="display" data-t="faq.title">Частые вопросы</h2>
+      </div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <section id="events" class="sec-grad">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" data-t="events.eyebrow">Календарь</span>
+        <h2 class="display" data-t="events.title">Ближайшие мероприятия</h2>
+      </div>
+      <div class="events" id="eventsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts" class="sec-dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" data-t="contacts.eyebrow">Связаться</span>
+        <h2 class="display" data-t="contacts.title">Контакты</h2>
+      </div>
+      <div class="contacts" id="contactsList"></div>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+<div class="modal" id="regModal" hidden>
+  <div class="modal-back" data-close-reg></div>
+  <div class="modal-card modal-reg" role="dialog" aria-modal="true" aria-labelledby="regModalTitle">
+    <div class="modal-head">
+      <div>
+        <h3 class="display" id="regModalTitle" data-t="reg.title">Зарегистрироваться</h3>
+        <span class="label" id="regModalEvent"></span>
+      </div>
+      <button class="modal-x" data-close-reg aria-label="Закрыть">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+<div class="ticket-form" id="formSide">
+          <form id="regForm" novalidate>
+            <div class="fields">
+              <div class="field full">
+                <label for="f-name" data-t="f.name">ФИО</label>
+                <input id="f-name" name="name" autocomplete="name" placeholder="Есімов Ерасыл Асқарұлы">
+                <span class="err" data-err="name"></span>
+              </div>
+              <div class="field">
+                <label for="f-phone" data-t="f.phone">Телефон</label>
+                <input id="f-phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__">
+                <span class="err" data-err="phone"></span>
+              </div>
+              <div class="field">
+                <label for="f-bd" data-t="f.bd">Дата рождения</label>
+                <input id="f-bd" name="bd" type="date" min="1930-01-01">
+                <span class="err" data-err="bd"></span>
+              </div>
+            </div>
+            <label class="consent">
+              <input type="checkbox" id="f-consent">
+              <span id="consentText"></span>
+            </label>
+            <span class="err" data-err="consent"></span>
+            <div class="form-actions">
+              <button class="btn" type="submit" data-t="cta.send">Отправить заявку</button>
+              <span class="form-note" id="formNote"></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="done" id="doneSide">
+          <div class="check">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>
+          </div>
+          <h3 class="display" data-t="done.title">Вы в списке</h3>
+          <p class="lede" style="font-size:16px" id="doneText"></p>
+          <p class="label" data-t="done.code">Номер участника</p>
+          <p class="code" id="doneCode">—</p>
+          <button class="btn ghost small" id="againBtn" data-t="done.again">Записать ещё одного</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="pdModal" hidden>
+  <div class="modal-back" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="pdTitle">
+    <div class="modal-head">
+      <div>
+        <h3 class="display" id="pdTitle"></h3>
+        <span class="label" id="pdUpdated"></span>
+      </div>
+      <button class="modal-x" data-close aria-label="Закрыть">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body" id="pdBody"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top" data-goto="top" aria-label="Адал Азамат">
+      <svg class="lockup" viewBox="0 0 1512 704" role="img"><use href="#aa-lockup"/></svg>
+    </a>
+    <div class="foot-links">
+      <button data-goto="about" data-t="nav.about">О школе</button>
+      <button data-goto="faq" data-t="nav.faq">Вопросы</button>
+      <button data-goto="contacts" data-t="nav.contacts">Контакты</button>
+    </div>
+  </div>
+</footer>
+
+<script>
+"use strict";
+
+/* ─────────── Словарь интерфейса ─────────── */
+const T = {
+  ru:{
+    
+    
+    "nav.reg":"Регистрация","nav.faq":"Вопросы","nav.contacts":"Контакты",
+    "about.eyebrow":"Кто мы","about.title":"Что такое Школа Адал азамат",
+    "about.p1":"Школа Адал азамат — кадровый резерв партии Әділет, который запустили Движение Жаңа адамдар и Движение Дала Қырандары.",
+    "about.p2":"Школа готовит молодых лидеров, которые умеют самостоятельно запускать проекты, собирать команды и добиваться результата. Участие в Школе доступно каждому — отбор проходит по мотивации и реальному опыту.",
+    "about.whoTitle":"Кто может участвовать",
+    "about.who":"Представители неправительственных организаций, общественных и молодёжных организаций, спортивных клубов, а также молодые люди, работающие в разных сферах и организациях.",
+    "about.cta":"Хочу присоединиться на обучение",
+    "faq.eyebrow":"Вопросы","faq.title":"Частые вопросы",
+    "contacts.eyebrow":"Связаться","contacts.title":"Контакты",
+    "gallery.label":"Открытие Школы Адал азамат",
+    "events.empty":"Мероприятия появятся здесь",
+    "need.title":"Название мероприятия","need.desc":"Описание мероприятия","need.date":"Дата и время",
+    "need.place":"Место","need.who":"Для кого","need.seats":"Мест",
+    "nav.poster":"Афиша","nav.about":"О школе","nav.admin":"Панель",
+    "cta.register":"Зарегистрироваться","cta.registerEvent":"Зарегистрироваться на мероприятие","cta.send":"Отправить заявку",
+    "status.open":"Регистрация открыта",
+    "meta.date":"Дата","meta.place":"Место","meta.who":"Для кого",
+    "count.title":"До начала","count.d":"дней","count.h":"часов","count.m":"минут","count.s":"секунд",
+    "seats.label":"Свободные места",
+    "reg.title":"Подать заявку",
+    "f.name":"ФИО","f.phone":"Телефон","f.bd":"Дата рождения",
+    "f.consent":"Даю согласие на сбор и обработку персональных данных для участия в мероприятии.",
+    "f.note":"",
+    "done.title":"Вы в списке","done.code":"Номер участника","done.again":"Записать ещё одного",
+    "stub.foot":"ПРОПУСК УЧАСТНИКА · ADAL AZAMAT",
+    "events.eyebrow":"Календарь","events.title":"Ближайшие мероприятия",
+    "admin.eyebrow":"Для организаторов","admin.title":"Панель",
+    "admin.newEvent":"Новая афиша","admin.newHint":"Появится на главной сразу",
+    "admin.titleRu":"Название (рус)","admin.titleKz":"Название (қаз)",
+    "admin.date":"Дата и время","admin.place":"Место","admin.seats":"Всего мест",
+    "admin.add":"Добавить афишу","admin.regs":"Заявки","admin.csv":"Выгрузить CSV","admin.clear":"Очистить",
+    "th.n":"№","th.name":"ФИО","th.phone":"Телефон","th.bd":"Дата рождения","th.city":"Город",
+    "th.org":"Организация","th.event":"Мероприятие","th.when":"Подана",
+    "empty":"Заявок пока нет",
+    "err.name":"Укажите фамилию и имя",
+    "err.phone":"Телефон в формате +7 700 000 00 00",
+    "err.bd":"Укажите дату рождения",
+    "err.consent":"Отметьте согласие",
+    "added":"Афиша добавлена",
+    "csv.ok":"Файл готов","csv.no":"Выгрузка недоступна в этом окне","csv.empty":"Нечего выгружать",
+    "done.text":ev=>`Заявка на «${ev}» принята. Сохраните номер участника — он понадобится на входе.`,
+    "left":(free,all)=>`${free} из ${all}`,
+    "pill.open":"Открыта","pill.soon":"Скоро","pill.done":"Завершено"
+  },
+  kz:{
+    "nav.reg":"Тіркеу","nav.faq":"Сұрақтар","nav.contacts":"Байланыс",
+    "about.eyebrow":"Біз кімбіз","about.title":"Адал азамат мектебі дегеніміз не",
+    "about.p1":"Адал азамат мектебі — Жаңа адамдар қозғалысы мен Дала Қырандары қозғалысы іске қосқан «Әділет» партиясының кадр резерві.",
+    "about.p2":"Мектеп жобаларды өз бетінше бастай алатын, команда жинай алатын және нәтижеге жете алатын жас көшбасшыларды даярлайды. Мектепке қатысу әркімге қолжетімді — іріктеу мотивация мен нақты тәжірибе бойынша өтеді.",
+    "about.cta":"Оқуға қосылғым келеді",
+    "about.whoTitle":"Кім қатыса алады",
+    "about.who":"Үкіметтік емес ұйымдардың, қоғамдық және жастар ұйымдарының, спорт клубтарының өкілдері, сондай-ақ түрлі салалар мен ұйымдарда жұмыс істейтін жастар.",
+    "faq.eyebrow":"Сұрақтар","faq.title":"Жиі қойылатын сұрақтар",
+    "contacts.eyebrow":"Хабарласу","contacts.title":"Байланыс",
+    "gallery.label":"Адал азамат мектебінің ашылуы",
+    "events.empty":"Іс-шаралар осында пайда болады",
+    "need.title":"Іс-шараның атауы","need.desc":"Іс-шараның сипаттамасы","need.date":"Күні мен уақыты",
+    "need.place":"Орны","need.who":"Кімдерге","need.seats":"Орын",
+    "nav.poster":"Афиша","nav.about":"Мектеп туралы","nav.admin":"Панель",
+    "cta.register":"Тіркелу","cta.registerEvent":"Іс-шараға тіркелу","cta.send":"Өтінім жіберу",
+    "status.open":"Тіркеу ашық",
+    "meta.date":"Күні","meta.place":"Орны","meta.who":"Кімдерге",
+    "count.title":"Басталуына","count.d":"күн","count.h":"сағат","count.m":"минут","count.s":"секунд",
+    "seats.label":"Бос орындар",
+    "reg.title":"Өтінім беру",
+    "f.name":"Аты-жөні","f.phone":"Телефон","f.bd":"Туған күні",
+    "f.consent":"Іс-шараға қатысу үшін дербес деректерімді жинауға және өңдеуге келісім беремін.",
+    "f.note":"",
+    "done.title":"Сіз тізімдесіз","done.code":"Қатысушы нөмірі","done.again":"Тағы біреуін тіркеу",
+    "stub.foot":"ҚАТЫСУШЫ РҰҚСАТНАМАСЫ · ADAL AZAMAT",
+    "events.eyebrow":"Күнтізбе","events.title":"Жақындағы іс-шаралар",
+    "admin.eyebrow":"Ұйымдастырушыларға","admin.title":"Панель",
+    "admin.newEvent":"Жаңа афиша","admin.newHint":"Басты бетте бірден шығады",
+    "admin.titleRu":"Атауы (орыс)","admin.titleKz":"Атауы (қаз)",
+    "admin.date":"Күні мен уақыты","admin.place":"Орны","admin.seats":"Барлық орын",
+    "admin.add":"Афиша қосу","admin.regs":"Өтінімдер","admin.csv":"CSV жүктеу","admin.clear":"Тазарту",
+    "th.n":"№","th.name":"Аты-жөні","th.phone":"Телефон","th.bd":"Туған күні","th.city":"Қала",
+    "th.org":"Ұйым","th.event":"Іс-шара","th.when":"Берілген",
+    "empty":"Әзірге өтінім жоқ",
+    "err.name":"Тегіңіз бен атыңызды жазыңыз",
+    "err.phone":"Телефон +7 700 000 00 00 форматында",
+    "err.bd":"Туған күніңізді көрсетіңіз",
+    "err.consent":"Келісімді белгілеңіз",
+    "added":"Афиша қосылды",
+    "csv.ok":"Файл дайын","csv.no":"Бұл терезеде жүктеу қолжетімсіз","csv.empty":"Жүктейтін дерек жоқ",
+    "done.text":ev=>`«${ev}» іс-шарасына өтінім қабылданды. Қатысушы нөмірін сақтаңыз — кіреберісте қажет болады.`,
+    "left":(free,all)=>`${all} орынның ${free}-і`,
+    "pill.open":"Ашық","pill.soon":"Жақында","pill.done":"Аяқталды"
+  }
+};
+
+const PHOTOS = {hero:"", gallery:[]};   // сюда встанут фотографии заказчицы
+
+const FACTS = [{"ru": {"k": "Длительность", "v": "2 месяца"}, "kz": {"k": "Ұзақтығы", "v": "2 ай"}}, {"ru": {"k": "Занятия", "v": "Раз в неделю по 1,5 часа"}, "kz": {"k": "Сабақтар", "v": "Аптасына бір рет, 1,5 сағат"}}, {"ru": {"k": "Языки", "v": "Казахский и русский"}, "kz": {"k": "Тілдер", "v": "Қазақша және орысша"}}, {"ru": {"k": "Участие", "v": "Доступно каждому"}, "kz": {"k": "Қатысу", "v": "Әркімге қолжетімді"}}];
+const FAQ = [{"ru": {"q": "Кто может участвовать в Школе АА?", "a": "Представители неправительственных организаций, общественных и молодёжных организаций, спортивных клубов, а также молодые люди, работающие в разных сферах и организациях."}, "kz": {"q": "АА Мектебіне кім қатыса алады?", "a": "Үкіметтік емес ұйымдардың, қоғамдық және жастар ұйымдарының, спорт клубтарының өкілдері, сондай-ақ түрлі салалар мен ұйымдарда жұмыс істейтін жастар."}}, {"ru": {"q": "Сколько стоит обучение в Школе АА?", "a": "Участие в Школе доступно каждому."}, "kz": {"q": "АА Мектебінде оқу қанша тұрады?", "a": "Мектепке қатысу әркімге қолжетімді."}}, {"ru": {"q": "Нужно ли состоять в организации, чтобы попасть в Школу АА?", "a": "Нет, членство в неправительственной или общественной организации не обязательно."}, "kz": {"q": "АА Мектебіне түсу үшін ұйым мүшесі болу керек пе?", "a": "Жоқ, үкіметтік емес немесе қоғамдық ұйымға мүшелік міндетті емес."}}, {"ru": {"q": "Сколько длится программа Школы АА?", "a": "2 месяца, занятия раз в неделю по 1,5 часа."}, "kz": {"q": "АА Мектебі бағдарламасы қанша уақытқа созылады?", "a": "2 ай, сабақтар аптасына бір рет 1,5 сағаттан."}}, {"ru": {"q": "На каком языке проходят занятия в Школе АА?", "a": "На казахском и русском."}, "kz": {"q": "АА Мектебінде сабақтар қай тілде өтеді?", "a": "Қазақ және орыс тілдерінде."}}, {"ru": {"q": "Что даёт участие в Школе АА?", "a": "Доступ к экспертам и наставникам, возможность реализовать свой проект и развивать кадровый резерв партии Әділет."}, "kz": {"q": "АА Мектебіне қатысу не береді?", "a": "Сарапшылар мен тәлімгерлерге қолжетімділік, өз жобаңды жүзеге асыру мүмкіндігі және «Әділет» партиясының кадр резервін дамыту."}}, {"ru": {"q": "Можно ли предложить свой проект в Школе АА?", "a": "Да, участники получают поддержку для запуска собственных инициатив."}, "kz": {"q": "АА Мектебінде өз жобамды ұсынуға бола ма?", "a": "Иә, қатысушылар өз бастамаларын іске қосуға қолдау алады."}}, {"ru": {"q": "Где проходят занятия Школы АА?", "a": "В Мастерской Школы Адал азамат."}, "kz": {"q": "АА Мектебінің сабақтары қайда өтеді?", "a": "Адал азамат мектебінің Шеберханасында."}}];
+const CONTACTS = [{"ru": {"k": "Адрес", "v": "Кабанбай батыр проспект, 58Б корпус 7"}, "kz": {"k": "Мекенжай", "v": "Қабанбай батыр даңғылы, 58Б, 7-корпус"}, "href": ""}, {"ru": {"k": "Телефон", "v": "[[указать номер]]"}, "kz": {"k": "Телефон", "v": "[[нөмірді көрсету]]"}, "href": ""}, {"ru": {"k": "Email", "v": "[[указать почту]]"}, "kz": {"k": "Email", "v": "[[поштаны көрсету]]"}, "href": ""}, {"ru": {"k": "Instagram", "v": "@adal.azamat.mektebi"}, "kz": {"k": "Instagram", "v": "@adal.azamat.mektebi"}, "href": "https://www.instagram.com/adal.azamat.mektebi"}, {"ru": {"k": "Пресс-секретарь", "v": "Темірхан Майя"}, "kz": {"k": "Баспасөз хатшысы", "v": "Темірхан Майя"}, "href": ""}];
+
+/* Афиша ждёт реального мероприятия — поля пустые до утверждения текста. */
+const SEED_EVENTS = [
+  {id:"e1",
+   ru:"Открытие Школы Адал азамат", kz:"Адал азамат мектебінің ашылуы",
+   dRu:"", dKz:"",
+   date:"2027-09-01T14:00",          // год на подтверждении
+   placeRu:"", placeKz:"",           // пусто — подсветится как незаполненное
+   whoRu:"", whoKz:"", seats:0, taken:0}
+];
+
+/* ─────────── Состояние ─────────── */
+const LS = {lang:"aa.lang", ev:"aa.events", rg:"aa.regs"};
+const read = (k,f)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch(e){return f}};
+const save = (k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+
+let lang = (()=>{try{return localStorage.getItem(LS.lang)||"ru"}catch(e){return "ru"}})();
+let events = read(LS.ev, SEED_EVENTS);
+let regs = read(LS.rg, []);
+
+const t = k => T[lang][k];
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+
+const featured = () => events.slice().sort((a,b)=>new Date(a.date)-new Date(b.date))[0] || SEED_EVENTS[0];
+const evTitle = e => lang==="kz" ? e.kz : e.ru;
+const evPlace = e => lang==="kz" ? e.placeKz : e.placeRu;
+const evWho   = e => lang==="kz" ? e.whoKz  : e.whoRu;
+const evDesc  = e => lang==="kz" ? e.dKz    : e.dRu;
+
+const KZ_MONTHS = ["қаңтар","ақпан","наурыз","сәуір","мамыр","маусым",
+                   "шілде","тамыз","қыркүйек","қазан","қараша","желтоқсан"];
+
+function fmtDate(iso, withTime){
+  const d = new Date(iso);
+  if(isNaN(d)) return iso;
+  const pad = n => String(n).padStart(2,"0");
+  if(lang === "kz"){
+    let s = d.getDate() + " " + KZ_MONTHS[d.getMonth()] + " " + d.getFullYear() + " ж.";
+    if(withTime) s += ", " + pad(d.getHours()) + ":" + pad(d.getMinutes());
+    return s;
+  }
+  const opt = {day:"numeric", month:"long", year:"numeric"};
+  if(withTime){opt.hour="2-digit";opt.minute="2-digit"}
+  return d.toLocaleDateString("ru-RU", opt);
+}
+
+/* ─────────── Бегущая строка ─────────── */
+(function ticker(){
+  const unit = "АДАЛ АЗАМАТ ◆ ADAL AZAMAT ◆ ";
+  const html = "<span>"+unit.repeat(8)+"</span><span>"+unit.repeat(8)+"</span>";
+  $$(".ticker-row").forEach(row=>{ row.innerHTML = html; });
+})();
+
+/* ─────────── Отрисовка ─────────── */
+function applyStatic(){
+  $$("[data-t]").forEach(el=>{
+    const v = T[lang][el.dataset.t];
+    if(typeof v === "string") el.textContent = v;
+  });
+  document.documentElement.lang = lang==="kz" ? "kk" : "ru";
+}
+
+function renderHero(){
+  const e = featured();
+  $("#heroTitle").innerHTML = "<em>" + (evTitle(e) || need("title")) + "</em>";
+  const lede = $("#heroLede");
+  lede.textContent = evDesc(e);
+  lede.hidden = !evDesc(e);
+  $("#heroDate").innerHTML = e.date ? fmtDate(e.date, true) : need("date");
+  $("#heroPlace").innerHTML = evPlace(e) || need("place");
+
+  const seatsBox = document.querySelector(".seats");
+  seatsBox.hidden = !e.seats;
+  if(e.seats){
+    setSeats(Math.max(0, e.seats - e.taken - regs.filter(r=>r.evId===e.id).length), e.seats);
+  }
+  const me = document.getElementById("regModalEvent");
+  if(me) me.textContent = [evTitle(e), e.date ? fmtDate(e.date, true) : ""].filter(Boolean).join(" · ");
+}
+
+let seatsDone = false;
+function setSeats(free, all){
+  const num = $("#seatsNum"), bar = $("#seatsBar");
+  const write = v => num.textContent = T[lang]["left"](Math.round(v), all);
+  requestAnimationFrame(()=>{ bar.style.width = Math.round(free / all * 100) + "%"; });
+  if(calm || seatsDone){ write(free); seatsDone = true; return; }
+  const t0 = performance.now(), dur = 1100;
+  (function step(now){
+    const k = Math.min(1, (now - t0) / dur);
+    write(free * (1 - Math.pow(1 - k, 3)));
+    if(k < 1) requestAnimationFrame(step); else seatsDone = true;
+  })(performance.now());
+}
+
+let timer = null;
+function renderCountdown(){
+  if(timer){ clearInterval(timer); timer = null; }
+  const target = new Date(featured().date).getTime();
+  if(isNaN(target)){
+    ["d","h","m","s"].forEach(k=>{ const el = $('[data-c="'+k+'"]'); if(el) el.textContent = "—"; });
+    return;
+  }
+  const tick = ()=>{
+    let left = Math.max(0, target - Date.now());
+    const d = Math.floor(left/864e5);
+    const h = Math.floor(left%864e5/36e5);
+    const m = Math.floor(left%36e5/6e4);
+    const s = Math.floor(left%6e4/1e3);
+    const set = (k,v)=>{
+      const el = $('[data-c="'+k+'"]');
+      if(!el) return;
+      const s = String(v).padStart(2,"0");
+      if(el.textContent === s) return;
+      el.textContent = s;
+      if(!calm && el.animate) el.animate(
+        [{transform:"translateY(-45%)",opacity:0},{transform:"none",opacity:1}],
+        {duration:280, easing:"cubic-bezier(.2,.8,.3,1)"});
+    };
+    set("d",d); set("h",h); set("m",m); set("s",s);
+  };
+  tick();
+  timer = setInterval(tick, 1000);
+}
+
+function renderEvents(){
+  const now = Date.now();
+  const sorted = events.slice().sort((a,b)=>new Date(a.date)-new Date(b.date));
+  if(!sorted.some(e=>evTitle(e))){
+    $("#eventsGrid").innerHTML = '<p class="empty-note">' + t("events.empty") + '</p>';
+    return;
+  }
+  $("#eventsGrid").innerHTML = sorted.map(e=>{
+    const taken = e.taken + regs.filter(r=>r.evId===e.id).length;
+    const past = new Date(e.date).getTime() < now;
+    const full = taken >= e.seats;
+    const cls = past ? "done" : (full ? "soon" : "open");
+    const key = past ? "pill.done" : (full ? "pill.soon" : "pill.open");
+    return `<article class="event">
+      <span class="date">${fmtDate(e.date,false)}</span>
+      <h3 class="display">${evTitle(e)}</h3>
+      <p>${evDesc(e)}</p>
+      <div class="foot">
+        <span class="place">${evPlace(e)}</span>
+        <span class="pill ${cls}">${t(key)}</span>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+const need = k => '<span class="fill">' + esc(t("need." + k)) + '</span>';
+
+function renderAbout(){
+  const photo = document.querySelector(".poster-photo");
+  const hero = document.getElementById("heroPhoto");
+  if(PHOTOS.hero){ if(!hero.src) hero.src = PHOTOS.hero; photo.hidden = false; }
+  else photo.hidden = true;
+
+  const gal = $("#gallery"), galLabel = document.querySelector('[data-t="gallery.label"]');
+  const has = PHOTOS.gallery.length > 0;
+  gal.hidden = !has;
+  if(galLabel) galLabel.hidden = !has;
+  gal.innerHTML = !has ? "" : PHOTOS.gallery.map((g,i)=>
+    `<figure class="shot"><img src="${g.src}" alt="${esc(t("gallery.label"))} — ${i+1}" loading="lazy"></figure>`
+  ).join("");
+
+  $("#facts").innerHTML = FACTS.map(f=>{
+    const c = f[lang];
+    return `<div class="fact"><span class="k">${esc(c.k)}</span><span class="v">${esc(c.v)}</span></div>`;
+  }).join("");
+
+  $("#faqList").innerHTML = FAQ.map((item,i)=>{
+    const c = item[lang];
+    return `<div class="qa" data-qa="${i}">
+      <button type="button" aria-expanded="false">
+        <span>${esc(c.q)}</span>
+        <span class="chev"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </button>
+      <div class="body"><div><p>${esc(c.a)}</p></div></div>
+    </div>`;
+  }).join("");
+
+  $("#contactsList").innerHTML = CONTACTS.map(c=>{
+    const v = c[lang];
+    const inner = `<span class="k">${esc(v.k)}</span><span class="v">${fills(v.v)}</span>`;
+    return c.href
+      ? `<a class="contact" href="${c.href}" target="_blank" rel="noopener">${inner}</a>`
+      : `<div class="contact">${inner}</div>`;
+  }).join("");
+}
+
+/* Раскрытие вопроса */
+document.addEventListener("click", ev=>{
+  const btn = ev.target.closest(".qa > button");
+  if(!btn) return;
+  const qa = btn.parentElement;
+  const open = qa.hasAttribute("data-open");
+  if(open) qa.removeAttribute("data-open"); else qa.setAttribute("data-open","");
+  btn.setAttribute("aria-expanded", String(!open));
+});
+
+
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function renderAll(){
+  applyStatic();
+  renderHero();
+  renderCountdown();
+  renderEvents();
+  renderAbout();
+  renderConsent();
+  setupReveal();
+  magnetize();
+  moveNavInk();
+}
+
+/* ─────────── Навигация по одной странице ─────────── */
+const SECTIONS = ["about","faq","events","contacts"];
+
+document.addEventListener("click", ev=>{
+  const link = ev.target.closest("[data-goto]");
+  if(!link) return;
+  ev.preventDefault();
+  const el = document.getElementById(link.dataset.goto);
+  if(link.dataset.goto === "top" || !el) window.scrollTo({top:0, behavior:calm ? "auto" : "smooth"});
+  else el.scrollIntoView({behavior:calm ? "auto" : "smooth", block:"start"});
+});
+
+const burger = document.getElementById("burger");
+const navMain = document.getElementById("navMain");
+function setMenu(open){
+  navMain.classList.toggle("open", open);
+  burger.setAttribute("aria-expanded", String(open));
+}
+burger.addEventListener("click", ()=> setMenu(!navMain.classList.contains("open")));
+navMain.addEventListener("click", ()=> setMenu(false));
+document.addEventListener("keydown", ev=>{ if(ev.key === "Escape") setMenu(false); });
+document.addEventListener("click", ev=>{
+  if(!navMain.contains(ev.target) && !burger.contains(ev.target)) setMenu(false);
+});
+
+function spy(){
+  let cur = null;
+  for(const id of SECTIONS){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= 150) cur = id;
+  }
+  let changed = false;
+  document.querySelectorAll("nav.main button").forEach(b=>{
+    const on = b.dataset.goto === cur;
+    if(on !== b.hasAttribute("aria-current")) changed = true;
+    if(on) b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current");
+  });
+  if(changed) moveNavInk();
+}
+
+$$(".lang button").forEach(b=>{
+  b.addEventListener("click", ()=>{
+    lang = b.dataset.lang;
+    save(LS.lang, lang);
+    try{localStorage.setItem(LS.lang, lang)}catch(e){}
+    $$(".lang button").forEach(x=>x.setAttribute("aria-pressed", String(x.dataset.lang===lang)));
+    if(calm){ renderAll(); return; }
+    document.body.classList.add("swapping");
+    setTimeout(()=>{
+      renderAll();
+      document.body.classList.remove("swapping");
+    }, 180);
+  });
+});
+try{localStorage.setItem(LS.lang, lang)}catch(e){}
+
+/* ─────────── Форма регистрации ─────────── */
+/* Номер набирается без кода страны: 700 577 70 41.
+   Код отбрасываем только когда цифр ровно одиннадцать —
+   иначе «7» в начале казахстанского номера съедалась бы как +7. */
+const digitsOf = s => String(s).replace(/\D/g, "");
+const phoneOk = s => digitsOf(s).length === 11 && digitsOf(s)[0] === "7";
+
+$("#f-phone").addEventListener("input", e=>{
+  let d = digitsOf(e.target.value);
+  if(d.length === 11 && (d[0] === "7" || d[0] === "8")) d = d.slice(1);
+  d = d.slice(0,10);
+  let out = "+7";
+  if(d.length) out += " (" + d.slice(0,3);
+  if(d.length >= 4) out += ") " + d.slice(3,6);
+  if(d.length >= 7) out += "-" + d.slice(6,8);
+  if(d.length >= 9) out += "-" + d.slice(8,10);
+  e.target.value = out;
+});
+
+function setErr(field, msg){
+  const box = document.querySelector('[data-err="'+field+'"]');
+  if(box) box.textContent = msg || "";
+  const input = document.getElementById("f-"+field);
+  if(input) input.setAttribute("aria-invalid", msg ? "true" : "false");
+}
+
+$("#regForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const name = $("#f-name").value.trim();
+  const phone = $("#f-phone").value.trim();
+  const bd = $("#f-bd").value;
+  const consent = $("#f-consent").checked;
+
+  let ok = true;
+  setErr("name", name.split(/\s+/).filter(Boolean).length >= 2 ? "" : (ok=false, t("err.name")));
+  setErr("phone", phoneOk(phone) ? "" : (ok=false, t("err.phone")));
+  setErr("bd", bd ? "" : (ok=false, t("err.bd")));
+  setErr("consent", consent ? "" : (ok=false, t("err.consent")));
+  if(!ok){
+    const first = document.querySelector('[aria-invalid="true"]');
+    if(first) first.focus();
+    return;
+  }
+
+  const e0 = featured();
+  const code = "AA-" + String(regs.length + 1).padStart(4,"0");
+  regs.push({
+    code, name, phone, bd,
+    evId:e0.id, evName:evTitle(e0),
+    at:fmtDate(new Date().toISOString(), false)
+  });
+  save(LS.rg, regs);
+
+  const submitBtn = $('#regForm button[type="submit"]');
+  const label = submitBtn.innerHTML;
+  const finish = ()=>{
+    submitBtn.removeAttribute("data-busy");
+    submitBtn.innerHTML = label;
+    $("#doneText").textContent = T[lang]["done.text"](evTitle(e0));
+    $("#formSide").hidden = true;
+    $("#doneSide").classList.add("on");
+    typeCode(code);
+    renderHero();
+    renderEvents();
+  };
+  if(calm){ finish(); return; }
+  submitBtn.dataset.busy = "1";
+  submitBtn.innerHTML = '<span class="spin"></span>' + esc(t("cta.send"));
+  setTimeout(finish, 700);
+});
+
+let typing = null;
+function typeCode(code){
+  const el = $("#doneCode");
+  if(typing){ clearInterval(typing); typing = null; }
+  if(calm || !code){ el.textContent = code || "—"; return; }
+  el.textContent = "";
+  let i = 0;
+  typing = setInterval(()=>{
+    el.textContent = code.slice(0, ++i);
+    if(i >= code.length){ clearInterval(typing); typing = null; }
+  }, 55);
+}
+
+$("#againBtn").addEventListener("click", ()=>{
+  if(typing){ clearInterval(typing); typing = null; }
+  $("#regForm").reset();
+  ["name","phone","bd","consent"].forEach(f=>setErr(f,""));
+  $("#doneSide").classList.remove("on");
+  $("#formSide").hidden = false;
+  $("#f-name").focus();
+});
+
+/* ─────────── Согласие на обработку персональных данных ─────────── */
+const PD = {"ru": {"updated": "Редакция от 8 сентября 2026 года", "note": "Перед публикацией сайта заполните поля, выделенные жёлтым, и отдайте документы на проверку юристу. Тексты составлены по законодательству Республики Казахстан, но не заменяют юридическое заключение.", "doc": {"id": "pd", "title": "Согласие на сбор и обработку персональных данных", "sub": "Оформляется в соответствии с Законом Республики Казахстан от 21 мая 2013 года № 94-V «О персональных данных и их защите». Проставляя отметку в форме регистрации, вы даёте согласие в электронной форме.", "parts": [{"t": "Оператор", "items": ["Собственником и оператором базы данных, содержащей персональные данные, является [[полное наименование юридического лица]], БИН [[БИН]], адрес: [[адрес]].", "Вопросы по обработке персональных данных направляются на адрес [[почта]] или по телефону [[телефон]]."]}, {"t": "Перечень персональных данных", "items": ["Фамилия, имя, отчество; номер мобильного телефона; дата рождения.", "При посещении мероприятия дополнительно может обрабатываться изображение участника, полученное при фото- и видеосъёмке.", "Сайт не собирает данные, относящиеся к персональным данным ограниченного доступа, кроме перечисленных выше."]}, {"t": "Цели обработки", "items": ["Регистрация заявки и формирование списка участников мероприятия.", "Идентификация участника при входе на площадку и обеспечение пропускного режима.", "Связь с участником: подтверждение, напоминание, уведомление об изменениях и отмене.", "Формирование обезличенной статистики и отчётности о деятельности движения.", "Информирование о будущих мероприятиях движения — при отдельном согласии участника."]}, {"t": "Действия с персональными данными", "items": ["Сбор, запись, систематизация, хранение, уточнение, использование, обезличивание, блокирование и уничтожение.", "Обработка ведётся с использованием средств автоматизации и без них."]}, {"t": "Передача третьим лицам", "items": ["Персональные данные могут передаваться владельцу площадки и службе охраны исключительно для оформления списков допуска на мероприятие.", "Передача осуществляется в минимально необходимом объёме и при условии соблюдения получателем требований конфиденциальности.", "Трансграничная передача персональных данных не осуществляется.", "Данные не передаются третьим лицам в рекламных целях и не продаются."]}, {"t": "Срок хранения и уничтожение", "items": ["Персональные данные хранятся до достижения целей обработки, но не более [[трёх лет]] с даты проведения мероприятия.", "По истечении срока либо при отзыве согласия данные уничтожаются в течение десяти рабочих дней, за исключением случаев, когда их хранение предусмотрено законодательством Республики Казахстан."]}, {"t": "Права субъекта персональных данных", "items": ["Знать о наличии у оператора своих персональных данных и получать сведения об условиях доступа к ним.", "Требовать изменения, дополнения, блокирования или уничтожения данных, если они неполны, недостоверны или получены незаконно.", "Отозвать согласие на сбор и обработку персональных данных в любой момент.", "Защищать свои права и законные интересы, в том числе требовать возмещения вреда, в порядке, установленном законодательством."]}, {"t": "Отзыв согласия", "items": ["Отзыв направляется в свободной форме на адрес [[почта]] с указанием фамилии, имени, отчества и номера телефона, которые были указаны при регистрации.", "После отзыва обработка прекращается, а данные уничтожаются в срок, указанный в пункте 6.2. Отзыв согласия влечёт невозможность участия в мероприятии, если заявка ещё не исполнена."]}, {"t": "Несовершеннолетние участники", "items": ["Согласие на обработку персональных данных лица, не достигшего восемнадцати лет, даёт его законный представитель.", "Проставляя отметку в форме от имени несовершеннолетнего, законный представитель подтверждает своё согласие и достоверность указанных данных."]}, {"t": "Подтверждение согласия", "items": ["Проставление отметки в поле согласия при отправке заявки признаётся согласием, выраженным в электронной форме, и приравнивается к согласию на бумажном носителе.", "Согласие даётся на срок, необходимый для достижения целей обработки, и действует до его отзыва."]}]}}, "kz": {"updated": "2026 жылғы 8 қыркүйектегі редакция", "note": "Сайтты жариялар алдында сары түспен белгіленген өрістерді толтырыңыз және құжаттарды заңгерге тексертіңіз. Мәтіндер Қазақстан Республикасының заңнамасына сәйкес жасалған, бірақ заңгерлік қорытындыны алмастырмайды.", "doc": {"id": "pd", "title": "Дербес деректерді жинауға және өңдеуге келісім", "sub": "Қазақстан Республикасының 2013 жылғы 21 мамырдағы № 94-V «Дербес деректер және оларды қорғау туралы» Заңына сәйкес ресімделеді. Тіркеу формасында белгі қою арқылы сіз электрондық нысанда келісім бересіз.", "parts": [{"t": "Оператор", "items": ["Дербес деректері бар дерекқордың меншік иесі және операторы — [[заңды тұлғаның толық атауы]], БСН [[БСН]], мекенжайы: [[мекенжай]].", "Дербес деректерді өңдеу жөніндегі сұрақтар [[пошта]] мекенжайына немесе [[телефон]] нөміріне жіберіледі."]}, {"t": "Дербес деректердің тізбесі", "items": ["Тегі, аты, әкесінің аты; ұялы телефон нөмірі; туған күні.", "Іс-шараға қатысқанда қосымша фото- және бейнетүсірілім кезінде алынған қатысушының бейнесі өңделуі мүмкін.", "Сайт жоғарыда аталғандардан басқа шектеулі қолжетімділіктегі дербес деректерді жинамайды."]}, {"t": "Өңдеу мақсаттары", "items": ["Өтінімді тіркеу және іс-шара қатысушыларының тізімін қалыптастыру.", "Алаңға кіру кезінде қатысушыны сәйкестендіру және өткізу режимін қамтамасыз ету.", "Қатысушымен байланыс: растау, еске салу, өзгерістер мен күшін жою туралы хабарлама.", "Қозғалыс қызметі туралы иесіздендірілген статистика мен есептілікті қалыптастыру.", "Қозғалыстың болашақ іс-шаралары туралы хабардар ету — қатысушының жеке келісімі болғанда."]}, {"t": "Дербес деректермен жасалатын әрекеттер", "items": ["Жинау, жазу, жүйелеу, сақтау, нақтылау, пайдалану, иесіздендіру, бұғаттау және жою.", "Өңдеу автоматтандыру құралдарын пайдаланумен және оларсыз жүргізіледі."]}, {"t": "Үшінші тұлғаларға беру", "items": ["Дербес деректер іс-шараға жіберу тізімдерін ресімдеу үшін ғана алаң иесіне және күзет қызметіне берілуі мүмкін.", "Беру ең аз қажетті көлемде және алушының құпиялылық талаптарын сақтауы шартымен жүзеге асырылады.", "Дербес деректерді трансшекаралық беру жүзеге асырылмайды.", "Деректер жарнамалық мақсатта үшінші тұлғаларға берілмейді және сатылмайды."]}, {"t": "Сақтау мерзімі және жою", "items": ["Дербес деректер өңдеу мақсаттарына қол жеткізілгенге дейін, бірақ іс-шара өткізілген күннен бастап [[үш жылдан]] аспайтын мерзімде сақталады.", "Мерзім өткеннен кейін не келісім кері қайтарылғанда деректер он жұмыс күні ішінде жойылады, оларды сақтау Қазақстан Республикасының заңнамасында көзделген жағдайларды қоспағанда."]}, {"t": "Дербес деректер субъектісінің құқықтары", "items": ["Операторда өз дербес деректерінің бар-жоғын білу және оларға қол жеткізу шарттары туралы мәлімет алу.", "Деректер толық емес, дұрыс емес немесе заңсыз алынған болса, оларды өзгертуді, толықтыруды, бұғаттауды не жоюды талап ету.", "Дербес деректерді жинауға және өңдеуге берілген келісімді кез келген сәтте кері қайтару.", "Заңнамада белгіленген тәртіппен өз құқықтары мен заңды мүдделерін қорғау, оның ішінде зиянның өтелуін талап ету."]}, {"t": "Келісімді кері қайтару", "items": ["Кері қайтару еркін нысанда [[пошта]] мекенжайына жіберіледі: тіркелу кезінде көрсетілген тегі, аты, әкесінің аты және телефон нөмірі көрсетіледі.", "Кері қайтарылғаннан кейін өңдеу тоқтатылады, ал деректер 6.2-тармақта көрсетілген мерзімде жойылады. Келісімді кері қайтару өтінім орындалмаған болса, іс-шараға қатысудың мүмкін еместігіне әкеледі."]}, {"t": "Кәмелетке толмаған қатысушылар", "items": ["Он сегіз жасқа толмаған адамның дербес деректерін өңдеуге келісімді оның заңды өкілі береді.", "Кәмелетке толмағанның атынан формада белгі қою арқылы заңды өкіл өз келісімін және көрсетілген деректердің дұрыстығын растайды."]}, {"t": "Келісімді растау", "items": ["Өтінімді жіберу кезінде келісім өрісіне белгі қою электрондық нысанда білдірілген келісім деп танылады және қағаз жеткізгіштегі келісімге теңестіріледі.", "Келісім өңдеу мақсаттарына қол жеткізу үшін қажетті мерзімге беріледі және кері қайтарылғанға дейін қолданылады."]}]}}};
+
+const CONSENT = {
+  ru:'Даю согласие на <a href="#" data-open-pd>сбор и обработку персональных данных</a> для участия в мероприятии.',
+  kz:'Іс-шараға қатысу үшін <a href="#" data-open-pd>дербес деректерімді жинауға және өңдеуге</a> келісім беремін.'
+};
+
+const fills = s => esc(s).replace(/\[\[(.+?)\]\]/g, '<span class="fill">$1</span>');
+
+function renderConsent(){
+  document.getElementById("consentText").innerHTML = CONSENT[lang];
+  document.getElementById("formNote").textContent = t("f.note");
+
+  const d = PD[lang], doc = d.doc;
+  document.getElementById("pdTitle").textContent = doc.title;
+  document.getElementById("pdUpdated").textContent = d.updated;
+  document.getElementById("pdBody").innerHTML =
+    `<p class="sub">${esc(doc.sub)}</p>` +
+    doc.parts.map((part,i)=>{
+      const clauses = part.items.map((it,j)=>
+        `<div class="clause"><i>${i+1}.${j+1}</i><p>${fills(it)}</p></div>`).join("");
+      return `<div class="part">
+        <div class="part-h"><span>${String(i+1).padStart(2,"0")}</span><b>${esc(part.t)}</b></div>
+        <div class="clauses">${clauses}</div>
+      </div>`;
+    }).join("") +
+    `<div class="doc-note">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex:0 0 auto;margin-top:2px"><path d="M12 8v5M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>
+      <p><b>${lang==="kz" ? "Толтыру қажет." : "Требует заполнения."}</b> ${esc(d.note)}</p>
+    </div>`;
+}
+
+/* Instagram не умеет подставлять текст в сообщение — копируем его в буфер,
+   человеку остаётся вставить в переписку. */
+const JOIN_MSG = {ru:"Хочу присоединиться на обучение", kz:"Оқуға қосылғым келеді"};
+const JOIN_HINT = {ru:"Текст скопирован — вставьте в сообщение", kz:"Мәтін көшірілді — хабарламаға қойыңыз"};
+const joinBtn = document.getElementById("joinBtn");
+if(joinBtn) joinBtn.addEventListener("click", async ()=>{
+  const hint = document.getElementById("joinHint");
+  try{
+    await navigator.clipboard.writeText(JOIN_MSG[lang]);
+    hint.textContent = JOIN_HINT[lang];
+    setTimeout(()=>{ hint.textContent = ""; }, 6000);
+  }catch(e){ /* буфер недоступен — просто откроем переписку */ }
+});
+
+const regModal = document.getElementById("regModal");
+let lastFocusReg = null;
+function openReg(){
+  lastFocusReg = document.activeElement;
+  regModal.hidden = false;
+  document.body.style.overflow = "hidden";
+  const first = document.getElementById("f-name");
+  if(first && !document.getElementById("formSide").hidden) first.focus();
+  else regModal.querySelector(".modal-x").focus();
+}
+function closeReg(){
+  regModal.hidden = true;
+  document.body.style.overflow = "";
+  if(lastFocusReg) lastFocusReg.focus();
+}
+document.addEventListener("click", ev=>{
+  if(ev.target.closest("[data-open-reg]")){ ev.preventDefault(); openReg(); return; }
+  if(ev.target.closest("[data-close-reg]")){ ev.preventDefault(); closeReg(); }
+});
+document.addEventListener("keydown", ev=>{
+  if(ev.key === "Escape" && !regModal.hidden) closeReg();
+});
+
+const modal = document.getElementById("pdModal");
+let lastFocus = null;
+
+function openPd(){
+  lastFocus = document.activeElement;
+  modal.hidden = false;
+  document.body.style.overflow = "hidden";
+  modal.querySelector(".modal-x").focus();
+}
+function closePd(){
+  modal.hidden = true;
+  document.body.style.overflow = "";
+  if(lastFocus) lastFocus.focus();
+}
+
+document.addEventListener("click", ev=>{
+  if(ev.target.closest("[data-open-pd]")){ ev.preventDefault(); openPd(); return; }
+  if(ev.target.closest("[data-close]")){ ev.preventDefault(); closePd(); }
+});
+document.addEventListener("keydown", ev=>{
+  if(ev.key === "Escape" && !modal.hidden) closePd();
+});
+
+/* ─────────── Появление при прокрутке ─────────── */
+const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const io = ("IntersectionObserver" in window) ? new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+  });
+}, {rootMargin:"0px 0px -6% 0px", threshold:.08}) : null;
+
+function moveNavInk(){
+  const nav = document.querySelector("nav.main");
+  if(!nav) return;
+  let ink = nav.querySelector(".nav-ink");
+  if(!ink){ ink = document.createElement("i"); ink.className = "nav-ink"; nav.appendChild(ink); }
+  const act = nav.querySelector('button[aria-current="page"]');
+  if(!act){ ink.style.width = "0px"; return; }
+  ink.style.width = act.offsetWidth + "px";
+  ink.style.transform = "translateX(" + act.offsetLeft + "px)";
+}
+addEventListener("resize", moveNavInk, {passive:true});
+
+/* Подсветка карточки мероприятия за курсором */
+document.addEventListener("pointermove", ev=>{
+  if(calm || !ev.target.closest) return;
+  const card = ev.target.closest(".event");
+  if(!card) return;
+  const r = card.getBoundingClientRect();
+  card.style.setProperty("--mx", (ev.clientX - r.left) + "px");
+  card.style.setProperty("--my", (ev.clientY - r.top) + "px");
+}, {passive:true});
+
+/* Главная кнопка слегка тянется к курсору */
+function magnetize(){
+  if(calm || !matchMedia("(hover:hover) and (pointer:fine)").matches) return;
+  document.querySelectorAll(".pass .btn").forEach(btn=>{
+    if(btn.dataset.mag) return;
+    btn.dataset.mag = "1";
+    btn.addEventListener("pointermove", ev=>{
+      const r = btn.getBoundingClientRect();
+      const dx = (ev.clientX - r.left - r.width / 2) / (r.width / 2);
+      const dy = (ev.clientY - r.top - r.height / 2) / (r.height / 2);
+      btn.style.transform = "translate(" + (dx * 7).toFixed(1) + "px," + (dy * 5).toFixed(1) + "px)";
+    }, {passive:true});
+    btn.addEventListener("pointerleave", ()=>{ btn.style.transform = ""; });
+  });
+}
+
+function setupReveal(){
+  if(calm || !io) return;
+  document.querySelectorAll(".sec-head, .ticket, .event, .about-hero>div, .principle, .zone, h2.display")
+    .forEach(el=>{
+      if(el.dataset.rev) return;
+      el.dataset.rev = "1";
+      const sibs = el.parentNode ? Array.prototype.indexOf.call(el.parentNode.children, el) : 0;
+      if(el.matches(".event, .principle, .zone")) el.style.transitionDelay = (sibs*80)+"ms";
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+}
+
+/* Индикатор прокрутки */
+const bar = document.getElementById("progress");
+const mark = document.querySelector(".poster-mark");
+let ticking = false;
+addEventListener("scroll", ()=>{
+  if(ticking) return;
+  ticking = true;
+  requestAnimationFrame(()=>{
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.width = (max > 0 ? Math.min(100, scrollY / max * 100) : 0) + "%";
+    spy();
+    if(!calm && mark) mark.style.transform = "rotate(-8deg) translate3d(0," + (scrollY * .17) + "px,0)";
+    ticking = false;
+  });
+}, {passive:true});
+
+/* ─────────── Старт ─────────── */
+if(!calm) document.body.classList.add("motion");
+$$(".lang button").forEach(x=>x.setAttribute("aria-pressed", String(x.dataset.lang===lang)));
+renderAll();
+addEventListener("load", moveNavInk);
+</script>
+
+</body>
+</html>
