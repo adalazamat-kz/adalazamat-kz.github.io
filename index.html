@@ -334,7 +334,16 @@ nav.main button[aria-current="page"]{color:var(--violet)}
 }
 .poster-card>*{position:relative;z-index:1;width:100%}
 .poster-card .status{width:auto}
-.poster-card .poster-title{margin-block:20px 16px}
+.poster-card .poster-title{margin-block:20px 8px}
+.poster-speaker{
+  font-size:clamp(19px,2vw,24px);font-weight:500;line-height:1.2;
+  color:#fff;margin:0 0 18px;
+  text-wrap:balance;
+}
+.poster-speaker::before{
+  content:"";display:block;width:34px;height:2px;border-radius:2px;
+  background:rgba(255,255,255,.55);margin-bottom:14px;
+}
 .poster-card .lede{font-size:clamp(16px,1.4vw,18px)}
 .poster-card .meta{margin-top:24px;border-top-color:rgba(255,255,255,.32)}
 .poster-card .meta div{border-right-color:rgba(255,255,255,.32)}
@@ -1051,6 +1060,7 @@ body.swapping main,body.swapping .poster{opacity:0}
           <span class="status"><i></i><span data-t="status.open">Регистрация открыта</span></span>
         </figure>
         <h1 class="display poster-title" id="heroTitle"></h1>
+        <p class="poster-speaker" id="heroSpeaker"></p>
         <p class="lede" id="heroLede"></p>
         <dl class="meta">
           <div><dt data-t="meta.date">Дата и время</dt><dd id="heroDate"></dd></div>
@@ -1357,8 +1367,8 @@ const CONTACTS = [{"ru": {"k": "Адрес", "v": "Кабанбай батыр �
 /* Афиша ждёт реального мероприятия — поля пустые до утверждения текста. */
 const SEED_EVENTS = [
   {id:"e1",
-   ru:"Актёрское мастерство с Дамиром Амангельдином",
-   kz:"Дамир Амангелдинмен актёрлік шеберлік",
+   ru:"Актёрское мастерство", kz:"Актёрлік шеберлік",
+   speakerRu:"Дамир Амангельдин", speakerKz:"Дамир Амангелдин",
    dRu:"", dKz:"",              // описание — ждём текста
    date:"2026-09-12T14:00",     // время на подтверждении
    placeRu:"Кабанбай батыр проспект, 58Б корпус 7",
@@ -1423,6 +1433,11 @@ function applyStatic(){
 function renderHero(){
   const e = featured();
   $("#heroTitle").innerHTML = "<em>" + (evTitle(e) || need("title")) + "</em>";
+  const spk = lang === "kz" ? e.speakerKz : e.speakerRu;
+  const spEl = $("#heroSpeaker");
+  spEl.textContent = spk || "";
+  spEl.hidden = !spk;
+
   const lede = $("#heroLede");
   lede.innerHTML = evDesc(e) || need("desc");
   $("#heroDate").innerHTML = e.date ? fmtDate(e.date, true) : need("date");
