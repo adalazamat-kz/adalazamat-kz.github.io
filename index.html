@@ -484,7 +484,10 @@ footer{border-top:1px solid var(--line);padding-block:44px;background:var(--ink-
 .join-text{font-weight:300;font-size:15.5px;line-height:1.6;color:rgba(255,255,255,.94)}
 .btn-light{
   background:#fff;color:var(--violet);box-shadow:0 8px 22px -10px rgba(10,5,32,.6);
-  align-self:flex-start;text-decoration:none;
+  /* во всю ширину карточки: подпись длинная и при align-self:flex-start
+     вылезала за правый внутренний отступ */
+  align-self:stretch;text-align:center;white-space:normal;line-height:1.25;
+  text-decoration:none;margin-top:6px;
 }
 .btn-light:hover{box-shadow:0 14px 30px -12px rgba(10,5,32,.7)}
 /* внутри тёмной секции карточка остаётся градиентной */
