@@ -323,14 +323,42 @@ nav.main button[aria-current="page"]{color:var(--violet)}
 .poster-card{
   position:relative;overflow:hidden;
   max-width:760px;margin-inline:auto;
-  background:var(--grad);border-radius:26px;
+  /* градиент медленно переливается */
+  background:linear-gradient(125deg,#3F8BEE 0%,#4C008E 38%,#5B21B6 62%,#3F8BEE 100%);
+  background-size:280% 280%;
+  animation:cardFlow 20s ease-in-out infinite;
+  border-radius:26px;
   padding:clamp(26px,3.6vw,44px);
   box-shadow:0 36px 80px -34px rgba(6,3,20,.9);
   display:flex;flex-direction:column;align-items:flex-start;
 }
+@keyframes cardFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* блик, который проходит по плашке */
 .poster-card::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
   background:radial-gradient(62% 58% at 12% 4%, rgba(255,255,255,.26), transparent 68%);
+  animation:cardGlow 14s ease-in-out infinite alternate;
+}
+@keyframes cardGlow{
+  from{background-position:0% 0%;opacity:.9}
+  to{background-position:60% 30%;opacity:1}
+}
+.poster-card::after{
+  content:"";position:absolute;top:-45%;bottom:-45%;left:0;width:34%;
+  pointer-events:none;z-index:0;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.17),transparent);
+  transform:skewX(-14deg) translateX(-180%);
+  animation:cardSweep 9s cubic-bezier(.4,0,.2,1) infinite;
+}
+@keyframes cardSweep{
+  0%{transform:skewX(-14deg) translateX(-180%)}
+  55%,100%{transform:skewX(-14deg) translateX(430%)}
+}
+@media (prefers-reduced-motion:reduce){
+  .poster-card{animation:none;background:var(--grad)}
+  .poster-card::before,.poster-card::after{animation:none}
+  .poster-card::after{display:none}
 }
 .poster-card>*{position:relative;z-index:1;width:100%}
 .poster-card .status{width:auto}
