@@ -1668,7 +1668,8 @@ $("#regForm").addEventListener("submit", e=>{
   regs.push({
     code, name, phone, bd,
     evId:e0.id, evName:evTitle(e0),
-    at:fmtDate(new Date().toISOString(), false)
+    at:fmtDate(new Date().toISOString(), false),
+    ts:new Date().toISOString()
   });
   save(LS.rg, regs);
 
