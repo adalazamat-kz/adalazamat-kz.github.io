@@ -836,6 +836,9 @@ body.swapping main,body.swapping .poster{opacity:0}
   .intro-actions .btn{width:100%}
 }
 
+.study-cta{margin-top:30px;align-self:flex-start;text-decoration:none}
+@media (max-width:620px){.study-cta{display:flex;width:100%}}
+
 /* ─── Слоты под текст, которого ещё нет ─────────────────── */
 .slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:32px}
 .slot{
@@ -1087,6 +1090,7 @@ a.contact:hover{transform:none}
       <p class="lede" style="margin-top:22px" data-t="study.p"></p>
       <div class="facts" id="facts"></div>
       <div class="slots" id="slots"></div>
+      <a class="btn btn-light study-cta" href="https://ig.me/m/adal.azamat.mektebi" target="_blank" rel="noopener" data-t="cta.apply">Подать заявку на обучение</a>
     </div>
   </section>
 
@@ -1241,7 +1245,6 @@ const T = {
     "events.empty":"Мероприятия появятся здесь",
     "need.title":"Название мероприятия","need.desc":"Описание мероприятия","need.date":"Дата и время",
     "need.place":"Место","need.who":"Для кого","need.seats":"Мест",
-    "nav.poster":"Афиша","nav.about":"О школе","nav.admin":"Панель",
     "cta.register":"Зарегистрироваться","cta.registerEvent":"Зарегистрироваться на мероприятие","cta.send":"Отправить заявку",
     "status.open":"Регистрация открыта",
     "meta.date":"Дата","meta.place":"Место","meta.who":"Для кого",
@@ -1289,7 +1292,6 @@ const T = {
     "events.empty":"Іс-шаралар осында пайда болады",
     "need.title":"Іс-шараның атауы","need.desc":"Іс-шараның сипаттамасы","need.date":"Күні мен уақыты",
     "need.place":"Орны","need.who":"Кімдерге","need.seats":"Орын",
-    "nav.poster":"Афиша","nav.about":"Мектеп туралы","nav.admin":"Панель",
     "cta.register":"Тіркелу","cta.registerEvent":"Іс-шараға тіркелу","cta.send":"Өтінім жіберу",
     "status.open":"Тіркеу ашық",
     "meta.date":"Күні","meta.place":"Орны","meta.who":"Кімдерге",
